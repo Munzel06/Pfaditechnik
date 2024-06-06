@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#f50505</color>
+    <color name="pbsviolet">#511e3a</color>
+    <color name="secondpbscolor">#632949</color>
 </resources>
