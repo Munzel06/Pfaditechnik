@@ -6,18 +6,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/pbsviolet">
+    android:background="@color/lightgreen">
 
 
     <ImageView
         android:id="@+id/imgBackground"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="239dp"
+        android:layout_height="363dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logopbs"/>
+        app:srcCompat="@drawable/pfadililie" />
+
+    <Button
+        android:id="@+id/btnNotrufnummern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notrufnummern"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBackground"
+        app:layout_constraintVertical_bias="0.26" />
+
+
+    <ImageButton
+        android:id="@+id/btnPionierHome"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:rotation="322"
+        android:src="@drawable/samariter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
 
     <Button
         android:id="@+id/btnHamburger"
@@ -34,7 +63,7 @@
         android:layout_width="132dp"
         android:layout_height="732dp"
         android:layout_marginStart="0dp"
-        android:background="@color/secondpbscolor"
+        android:background="@color/darkgreen"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -79,7 +108,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/pbsviolet"
+        android:background="@color/lightgreen"
         android:id="@+id/relPionier"
         android:visibility="gone">
 
@@ -87,7 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pionier"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="25dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
@@ -102,7 +131,7 @@
             android:layout_centerHorizontal="true"
             android:maxLines="3"
             android:textSize="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_marginTop="20dp"
             />
     </RelativeLayout>

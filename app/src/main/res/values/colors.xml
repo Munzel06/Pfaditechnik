@@ -5,4 +5,6 @@
     <color name="red">#f50505</color>
     <color name="pbsviolet">#511e3a</color>
     <color name="secondpbscolor">#632949</color>
+    <color name="lightgreen">#448041</color>
+    <color name="darkgreen">#326432</color>
 </resources>
