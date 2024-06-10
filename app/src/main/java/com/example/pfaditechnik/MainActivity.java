@@ -25,11 +25,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnHamburger.setVisibility(View.GONE);
             relPionier.setVisibility(View.GONE);
             relRegister.setVisibility(View.VISIBLE);
+            btnHome.setVisibility(View.VISIBLE);
         } else if (v.getId() == R.id.btnHome) {
             relRegister.setVisibility(View.GONE);
+            btnHome.setVisibility(View.GONE);
             btnHamburger.setVisibility(View.VISIBLE);
         } else if (v.getId() == R.id.btnPionier) {
             relRegister.setVisibility(View.GONE);
+            btnHome.setVisibility(View.GONE);
             relPionier.setVisibility(View.VISIBLE);
             btnHamburger.setVisibility(View.VISIBLE);
         }

@@ -22,8 +22,8 @@
     <Button
         android:id="@+id/btnHamburger"
         style="@style/ButtonInvisible"
-        android:layout_width="61dp"
-        android:layout_height="66dp"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
         android:background="@drawable/hamburgerbutton"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,12 +68,13 @@
         android:id="@+id/btnHome"
         style="@style/ButtonInvisible"
         android:layout_width="274dp"
-        android:layout_height="728dp"
+        android:layout_height="0dp"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/relRegister"
         app:layout_constraintEnd_toEndOf="@+id/imgBackground"
         app:layout_constraintStart_toEndOf="@+id/relRegister"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/relRegister" />
 
     <RelativeLayout
         android:layout_width="match_parent"
