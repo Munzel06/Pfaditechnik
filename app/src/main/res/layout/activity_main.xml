@@ -19,34 +19,96 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pfadililie" />
 
-    <Button
-        android:id="@+id/btnNotrufnummern"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Notrufnummern"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgBackground"
-        app:layout_constraintVertical_bias="0.26" />
-
 
     <ImageButton
         android:id="@+id/btnPionierHome"
-        android:background="@null"
-        android:scaleType="fitCenter"
         android:layout_width="75dp"
         android:layout_height="75dp"
+        android:background="@null"
         android:rotation="322"
+        android:scaleType="fitCenter"
         android:src="@drawable/samariter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.166" />
+
+    <ImageButton
+        android:id="@+id/btnSamariterHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:rotation="-2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/erstehilfe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <ImageButton
+        android:id="@+id/btnMorseHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:rotation="143"
+        android:scaleType="fitCenter"
+        android:src="@drawable/morsen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <ImageButton
+        android:id="@+id/btnNaturHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:rotation="28"
+        android:scaleType="fitCenter"
+        android:src="@drawable/natur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <ImageButton
+        android:id="@+id/btnKarteHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:rotation="-322"
+        android:scaleType="fitCenter"
+        android:src="@drawable/karte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <ImageButton
+        android:id="@+id/btnGeschichteHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:rotation="23"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pfadigeschichte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
 
     <Button
         android:id="@+id/btnHamburger"
@@ -64,7 +126,7 @@
         android:layout_height="732dp"
         android:layout_marginStart="0dp"
         android:background="@color/darkgreen"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -91,19 +153,31 @@
             android:textAllCaps="false"
             android:textSize="25dp" />
 
+        <Button
+            android:id="@+id/btnSamariter"
+            style="@style/ButtonInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Pionier"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
     </RelativeLayout>
 
     <Button
         android:id="@+id/btnHome"
         style="@style/ButtonInvisible"
-        android:layout_width="274dp"
+        android:layout_width="2740dp"
         android:layout_height="0dp"
         android:text=""
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/relRegister"
-        app:layout_constraintEnd_toEndOf="@+id/imgBackground"
         app:layout_constraintStart_toEndOf="@+id/relRegister"
-        app:layout_constraintTop_toTopOf="@+id/relRegister" />
+        app:layout_constraintTop_toTopOf="@+id/relRegister"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RelativeLayout
         android:layout_width="match_parent"
