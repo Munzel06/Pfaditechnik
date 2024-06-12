@@ -75,10 +75,10 @@
         android:src="@drawable/natur"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintHorizontal_bias="0.693"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
+        app:layout_constraintVertical_bias="0.073" />
 
     <ImageButton
         android:id="@+id/btnKarteHome"
@@ -90,10 +90,10 @@
         android:src="@drawable/karte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintVertical_bias="0.384" />
 
     <ImageButton
         android:id="@+id/btnGeschichteHome"
@@ -111,10 +111,20 @@
         app:layout_constraintVertical_bias="0.833" />
 
     <Button
+        android:id="@+id/btnHomeIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        style="@style/ButtonInvisible"
+        android:background="@drawable/homebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <Button
         android:id="@+id/btnHamburger"
         style="@style/ButtonInvisible"
-        android:layout_width="67dp"
-        android:layout_height="68dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:background="@drawable/hamburgerbutton"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +136,7 @@
         android:layout_height="732dp"
         android:layout_marginStart="0dp"
         android:background="@color/darkgreen"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -148,7 +158,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtRegister"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="Pionier"
             android:textAllCaps="false"
             android:textSize="25dp" />
@@ -158,10 +168,10 @@
             style="@style/ButtonInvisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtRegister"
+            android:layout_below="@+id/btnPionier"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:text="Pionier"
+            android:layout_marginTop="10dp"
+            android:text="Samariter"
             android:textAllCaps="false"
             android:textSize="25dp" />
 

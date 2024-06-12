@@ -3,6 +3,7 @@ package com.example.pfaditechnik;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnHamburger;
     private Button btnHome;
     private Button btnPionier;
+    private ImageButton btnPionierHome;
+    private Button btnHomeIcon;
 
     @Override
     public void onClick(View v) {
@@ -26,14 +29,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             relPionier.setVisibility(View.GONE);
             relRegister.setVisibility(View.VISIBLE);
             btnHome.setVisibility(View.VISIBLE);
+            btnHomeIcon.setVisibility(View.GONE);
         } else if (v.getId() == R.id.btnHome) {
             relRegister.setVisibility(View.GONE);
             btnHome.setVisibility(View.GONE);
             btnHamburger.setVisibility(View.VISIBLE);
-        } else if (v.getId() == R.id.btnPionier) {
+            btnHomeIcon.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnPionier || v.getId() == R.id.btnPionierHome){
             relRegister.setVisibility(View.GONE);
             btnHome.setVisibility(View.GONE);
             relPionier.setVisibility(View.VISIBLE);
+            btnHamburger.setVisibility(View.VISIBLE);
+            btnHomeIcon.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnHomeIcon) {
+            relPionier.setVisibility(View.GONE);
+            btnHomeIcon.setVisibility(View.GONE);
             btnHamburger.setVisibility(View.VISIBLE);
         }
     }
@@ -53,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnHome.setOnClickListener(this);
         btnPionier = findViewById(R.id.btnPionier);
         btnPionier.setOnClickListener(this);
+        btnPionierHome = findViewById(R.id.btnPionierHome);
+        btnPionierHome.setOnClickListener(this);
+        btnHomeIcon = findViewById(R.id.btnHomeIcon);
+        btnHomeIcon.setOnClickListener(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
