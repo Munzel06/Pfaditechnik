@@ -19,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pfadililie" />
 
-
     <ImageButton
         android:id="@+id/btnPionierHome"
         android:layout_width="75dp"
@@ -51,7 +50,7 @@
         app:layout_constraintVertical_bias="0.474" />
 
     <ImageButton
-        android:id="@+id/btnMorseHome"
+        android:id="@+id/btnUbermittlungHome"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@null"
@@ -132,7 +131,7 @@
 
     <RelativeLayout
         android:id="@+id/relRegister"
-        android:layout_width="132dp"
+        android:layout_width="150dp"
         android:layout_height="732dp"
         android:layout_marginStart="0dp"
         android:background="@color/darkgreen"
@@ -170,8 +169,68 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnPionier"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:text="Samariter"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnUbermittlung"
+            style="@style/ButtonInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSamariter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Über- \nmittlung"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnNatur"
+            style="@style/ButtonInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnUbermittlung"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Natur"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnKarte"
+            style="@style/ButtonInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNatur"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Karte und Kompass"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnGeschichte"
+            style="@style/ButtonInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnKarte"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Pfadi-\ngeschichte"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnSonstiges"
+            style="@style/ButtonInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGeschichte"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Sonstiges"
             android:textAllCaps="false"
             android:textSize="25dp" />
 
@@ -220,5 +279,196 @@
             />
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgreen"
+        android:id="@+id/relSamariter"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samariter"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txtSamariterTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das wäre nun der Platz\nfür erklärung über Erste Hilfe\nund so"
+            android:layout_below="@+id/txtSamariterTitle"
+            android:layout_centerHorizontal="true"
+            android:maxLines="3"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgreen"
+        android:id="@+id/relUbermittlung"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Übermittlung"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txtUbermittlungTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das wäre nun der Platz\nfür Erklärungen über\nÜbermittlung und so"
+            android:layout_below="@+id/txtUbermittlungTitle"
+            android:layout_centerHorizontal="true"
+            android:maxLines="3"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgreen"
+        android:id="@+id/relNatur"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Natur"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txtNaturTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das wäre nun der Platz\nfür Erklärungen über Natur\nund so"
+            android:layout_below="@+id/txtNaturTitle"
+            android:layout_centerHorizontal="true"
+            android:maxLines="3"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgreen"
+        android:id="@+id/relKarte"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karte"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txtKarteTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das wäre nun der Platz\nfür Erklärungen über\nKarte und Kompass und so"
+            android:layout_below="@+id/txtKarteTitle"
+            android:layout_centerHorizontal="true"
+            android:maxLines="4"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgreen"
+        android:id="@+id/relGeschichte"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pfadigeschichte"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txtGeschichteTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das wäre nun der Platz\nfür Erklärungen über Pfadigeschichte\nund so"
+            android:layout_below="@+id/txtGeschichteTitle"
+            android:layout_centerHorizontal="true"
+            android:maxLines="4"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgreen"
+        android:id="@+id/relSonstiges"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonstiges"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txtSonstigesTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das wäre nun der Platz\nfür Sonstiges"
+            android:layout_below="@+id/txtSonstigesTitle"
+            android:layout_centerHorizontal="true"
+            android:maxLines="3"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
