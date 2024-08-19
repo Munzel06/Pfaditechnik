@@ -12,6 +12,27 @@
         android:theme="@style/Theme.PfadiTechnik"
         tools:targetApi="31">
         <activity
+            android:name=".Sonstiges"
+            android:exported="false" />
+        <activity
+            android:name=".Karte"
+            android:exported="false" />
+        <activity
+            android:name=".Natur"
+            android:exported="false" />
+        <activity
+            android:name=".Ubermittlung"
+            android:exported="false" />
+        <activity
+            android:name=".Pionier"
+            android:exported="false" />
+        <activity
+            android:name=".Samariter"
+            android:exported="false" />
+        <activity
+            android:name=".Pfafdigeschichte"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

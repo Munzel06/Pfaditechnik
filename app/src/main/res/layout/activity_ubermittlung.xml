@@ -1,113 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Ubermittlung"
     android:background="@color/lightgreen">
 
-
-    <ImageView
-        android:id="@+id/imgBackground"
-        android:layout_width="239dp"
-        android:layout_height="363dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pfadililie" />
-
-    <ImageButton
-        android:id="@+id/btnPionierHome"
+    <Button
+        android:id="@+id/btnHomeIcon"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="322"
-        android:scaleType="fitCenter"
-        android:src="@drawable/samariter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
-
-    <ImageButton
-        android:id="@+id/btnSamariterHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="-2"
-        android:scaleType="fitCenter"
-        android:src="@drawable/erstehilfe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
-
-    <ImageButton
-        android:id="@+id/btnUbermittlungHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="143"
-        android:scaleType="fitCenter"
-        android:src="@drawable/morsen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
-
-    <ImageButton
-        android:id="@+id/btnNaturHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="28"
-        android:scaleType="fitCenter"
-        android:src="@drawable/natur"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.693"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
-
-    <ImageButton
-        android:id="@+id/btnKarteHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="-322"
-        android:scaleType="fitCenter"
-        android:src="@drawable/karte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <ImageButton
-        android:id="@+id/btnGeschichteHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="23"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pfadigeschichte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        style="@style/ButtonInvisible"
+        android:background="@drawable/homebtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/btnHamburger"
@@ -116,18 +25,17 @@
         android:layout_height="75dp"
         android:background="@drawable/hamburgerbutton"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
 
     <RelativeLayout
         android:id="@+id/relRegister"
         android:layout_width="150dp"
-        android:layout_height="732dp"
+        android:layout_height="match_parent"
         android:layout_marginStart="0dp"
         android:background="@color/darkgreen"
         android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_alignParentLeft="true">
 
         <TextView
             android:id="@+id/txtRegister"
@@ -229,13 +137,9 @@
     <Button
         android:id="@+id/btnHomeReg"
         style="@style/ButtonInvisible"
-        android:layout_width="2740dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text=""
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/relRegister"
-        app:layout_constraintStart_toEndOf="@+id/relRegister"
-        app:layout_constraintTop_toTopOf="@+id/relRegister"
-        app:layout_constraintVertical_bias="0.0" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_toRightOf="@+id/relRegister" />
+</RelativeLayout>

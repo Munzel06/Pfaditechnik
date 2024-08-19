@@ -13,94 +13,84 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Pfafdigeschichte extends AppCompatActivity implements View.OnClickListener {
 
+    private Button btnHomeReg;
     private RelativeLayout relRegister;
     private Button btnHamburger;
-    private Button btnHomeReg;
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v){
         if (v.getId() == R.id.btnHamburger) {
-            homeScreen();
             relRegister.setVisibility(View.VISIBLE);
             btnHamburger.setVisibility(View.GONE);
             btnHomeReg.setVisibility(View.VISIBLE);
         } else if (v.getId() == R.id.btnHomeReg) {
-            homeScreen();
-        } else if (v.getId() == R.id.btnPionierReg || v.getId() == R.id.btnPionierHome){
-            Intent intentPionier = new Intent(MainActivity.this, Pionier.class);
+            relRegister.setVisibility(View.GONE);
+            btnHamburger.setVisibility(View.VISIBLE);
+            btnHomeReg.setVisibility(View.GONE);
+        }  else if (v.getId() == R.id.btnPionierReg){
+            Intent intentPionier = new Intent(Pfafdigeschichte.this, Pionier.class);
             startActivity(intentPionier);
-        } else if (v.getId() == R.id.btnSamariterReg || v.getId() == R.id.btnSamariterHome) {
-            Intent intentSamariter = new Intent(MainActivity.this, Samariter.class);
+        } else if (v.getId() == R.id.btnSamariterReg) {
+            Intent intentSamariter = new Intent(Pfafdigeschichte.this, Samariter.class);
             startActivity(intentSamariter);
-        } else if (v.getId() == R.id.btnUbermittlungReg || v.getId() == R.id.btnUbermittlungHome) {
-            Intent intentUbermittlung = new Intent(MainActivity.this, Ubermittlung.class);
+        } else if (v.getId() == R.id.btnUbermittlungReg) {
+            Intent intentUbermittlung = new Intent(Pfafdigeschichte.this, Ubermittlung.class);
             startActivity(intentUbermittlung);
-        } else if (v.getId() == R.id.btnNaturReg || v.getId() == R.id.btnNaturHome) {
-            Intent intentNatur = new Intent(MainActivity.this, Natur.class);
+        } else if (v.getId() == R.id.btnNaturReg) {
+            Intent intentNatur = new Intent(Pfafdigeschichte.this, Natur.class);
             startActivity(intentNatur);
-        } else if (v.getId() == R.id.btnKarteReg || v.getId() == R.id.btnKarteHome) {
-            Intent intentKarte = new Intent(MainActivity.this, Karte.class);
+        } else if (v.getId() == R.id.btnKarteReg) {
+            Intent intentKarte = new Intent(Pfafdigeschichte.this, Karte.class);
             startActivity(intentKarte);
-        } else if (v.getId() == R.id.btnGeschichteReg || v.getId() == R.id.btnGeschichteHome) {
-            Intent intentGeschichte = new Intent(MainActivity.this, Pfafdigeschichte.class);
+        } else if (v.getId() == R.id.btnGeschichteReg) {
+            Intent intentGeschichte = new Intent(Pfafdigeschichte.this, Pfafdigeschichte.class);
             startActivity(intentGeschichte);
         } else if (v.getId() == R.id.btnSonstigesReg) {
-            Intent intentSonstiges = new Intent(MainActivity.this, Sonstiges.class);
+            Intent intentSonstiges = new Intent(Pfafdigeschichte.this, Sonstiges.class);
             startActivity(intentSonstiges);
+        } else if (v.getId() == R.id.btnHomeIcon) {
+            Intent intentHome = new Intent(Pfafdigeschichte.this, MainActivity.class);
+            startActivity(intentHome);
         }
     }
 
-    private void homeScreen() {
-        relRegister.setVisibility(View.GONE);
-        btnHamburger.setVisibility(View.VISIBLE);
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pfafdigeschichte);
 
-        relRegister = findViewById(R.id.relRegister);
-
-        btnHamburger = findViewById(R.id.btnHamburger);
-        btnHamburger.setOnClickListener(this);
         btnHomeReg = findViewById(R.id.btnHomeReg);
         btnHomeReg.setOnClickListener(this);
+        btnHamburger = findViewById(R.id.btnHamburger);
+        btnHamburger.setOnClickListener(this);
+        relRegister = findViewById(R.id.relRegister);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
-        ImageButton btnPionierHome = findViewById(R.id.btnPionierHome);
-        btnPionierHome.setOnClickListener(this);
 
         Button btnSamariterReg = findViewById(R.id.btnSamariterReg);
         btnSamariterReg.setOnClickListener(this);
-        ImageButton btnSamariterHome = findViewById(R.id.btnSamariterHome);
-        btnSamariterHome.setOnClickListener(this);
 
         Button btnUbermittlungReg = findViewById(R.id.btnUbermittlungReg);
         btnUbermittlungReg.setOnClickListener(this);
-        ImageButton btnUbermittlungHome = findViewById(R.id.btnUbermittlungHome);
-        btnUbermittlungHome.setOnClickListener(this);
 
         Button btnNaturReg = findViewById(R.id.btnNaturReg);
         btnNaturReg.setOnClickListener(this);
-        ImageButton btnNaturHome = findViewById(R.id.btnNaturHome);
-        btnNaturHome.setOnClickListener(this);
 
         Button btnKarteReg = findViewById(R.id.btnKarteReg);
         btnKarteReg.setOnClickListener(this);
-        ImageButton btnKarteHome = findViewById(R.id.btnKarteHome);
-        btnKarteHome.setOnClickListener(this);
 
         Button btnGeschichteReg = findViewById(R.id.btnGeschichteReg);
         btnGeschichteReg.setOnClickListener(this);
-        ImageButton btnGeschichteHome = findViewById(R.id.btnGeschichteHome);
-        btnGeschichteHome.setOnClickListener(this);
 
         Button btnSonstigesReg = findViewById(R.id.btnSonstigesReg);
         btnSonstigesReg.setOnClickListener(this);
+
+        Button btnHomeIcon = findViewById(R.id.btnHomeIcon);
+        btnHomeIcon.setOnClickListener(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -108,4 +98,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return insets;
         });
     }
+
 }

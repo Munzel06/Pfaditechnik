@@ -1,113 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Pfafdigeschichte"
     android:background="@color/lightgreen">
 
-
-    <ImageView
-        android:id="@+id/imgBackground"
-        android:layout_width="239dp"
-        android:layout_height="363dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pfadililie" />
-
-    <ImageButton
-        android:id="@+id/btnPionierHome"
+    <Button
+        android:id="@+id/btnHomeIcon"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="322"
-        android:scaleType="fitCenter"
-        android:src="@drawable/samariter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
-
-    <ImageButton
-        android:id="@+id/btnSamariterHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="-2"
-        android:scaleType="fitCenter"
-        android:src="@drawable/erstehilfe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
-
-    <ImageButton
-        android:id="@+id/btnUbermittlungHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="143"
-        android:scaleType="fitCenter"
-        android:src="@drawable/morsen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
-
-    <ImageButton
-        android:id="@+id/btnNaturHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="28"
-        android:scaleType="fitCenter"
-        android:src="@drawable/natur"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.693"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
-
-    <ImageButton
-        android:id="@+id/btnKarteHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="-322"
-        android:scaleType="fitCenter"
-        android:src="@drawable/karte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <ImageButton
-        android:id="@+id/btnGeschichteHome"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@null"
-        android:rotation="23"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pfadigeschichte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        style="@style/ButtonInvisible"
+        android:background="@drawable/homebtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/btnHamburger"
@@ -116,18 +25,67 @@
         android:layout_height="75dp"
         android:background="@drawable/hamburgerbutton"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/txtPfadigeschichte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Pfadigeschichte"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/txtPfadigeschichte"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bipi"
+                android:id="@+id/imgBipi"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgBipi"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:justificationMode="inter_word"
+                android:textSize="15dp"
+                android:text="Robert Stephenson Smyth Baden-Powell, der Gründer der Pfadfinderbewegung, wurde am 22. Februar 1857 in London geboren. Er fiel durch die Aufnahmeprüfungen der Universität und entschied sich Karriere im Militär zu machen. Er wurde in der Kolonie Indien stationiert wo er auf Spione oder Scouts aufmerksam wurde und deren wichtige Funktion im Kampfgeschehen erkannte. Später wurde er nach Südafrika verlegt, wo er zum ersten Mal seine eigenen Scouts ausbildete, aber immer noch im militärischen Umfeld. Als Baden-Powell, nun besser bekannt als BiPi, eine Stadt aus der Belagerung befreien musste, setzte er seine Scouts erstmals im Gefecht ein und er war erstaunt, wie gut sie ihre Aufgaben bewältigten. Zurück in England beendete BiPi seine Militärische Karriere und sagte: Am Ende meiner Karriere begann ich, die Kunst, junge Leute zu lehren, wie man Krieg macht, umzuwandeln in die Kunst junge Leute zu lehren, in Frieden zu leben; Pfadi ist weit entfernt vom Krieg
+Im Jahre 1907 organisierte er das erste Pfadilager für Jungen auf der Insel Brownsea. Nach dem riesigen Erfolg dieses Lagers schrieb er das Buch Pfadfinder. Das Buch war ein solcher Erfolg, dass überall in England neue Pfadigruppen entstanden und 1909 auch Mädchenabteilungen entstanden unter dem Namen Guides. Im Jahre 1912 heiratete BiPi Olave Saint Clair Soames, welche als Chief Guide die Leitung der Pfadfinderinnen übernahm. 1920 fand das erste Jamboree statt, es nahmen Jugendliche aus 34 Ländern teil. Später wurde BiPi zum World Chief ernannt. Die Pfadibewegung explodierte und um 1993 gab es etwa 25 Millionen Pfadi in über 150 Ländern." />
+        </RelativeLayout>
+    </ScrollView>
+
 
     <RelativeLayout
         android:id="@+id/relRegister"
         android:layout_width="150dp"
-        android:layout_height="732dp"
+        android:layout_height="match_parent"
         android:layout_marginStart="0dp"
         android:background="@color/darkgreen"
         android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_alignParentLeft="true">
 
         <TextView
             android:id="@+id/txtRegister"
@@ -229,13 +187,9 @@
     <Button
         android:id="@+id/btnHomeReg"
         style="@style/ButtonInvisible"
-        android:layout_width="2740dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text=""
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/relRegister"
-        app:layout_constraintStart_toEndOf="@+id/relRegister"
-        app:layout_constraintTop_toTopOf="@+id/relRegister"
-        app:layout_constraintVertical_bias="0.0" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_toRightOf="@+id/relRegister" />
+</RelativeLayout>
