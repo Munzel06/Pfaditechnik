@@ -18,6 +18,7 @@ public class Pfafdigeschichte extends AppCompatActivity implements View.OnClickL
     private Button btnHomeReg;
     private RelativeLayout relRegister;
     private Button btnHamburger;
+    private Button btnHomeIcon;
 
     @Override
     public void onClick(View v){
@@ -25,10 +26,12 @@ public class Pfafdigeschichte extends AppCompatActivity implements View.OnClickL
             relRegister.setVisibility(View.VISIBLE);
             btnHamburger.setVisibility(View.GONE);
             btnHomeReg.setVisibility(View.VISIBLE);
+            btnHomeIcon.setVisibility(View.GONE);
         } else if (v.getId() == R.id.btnHomeReg) {
             relRegister.setVisibility(View.GONE);
             btnHamburger.setVisibility(View.VISIBLE);
             btnHomeReg.setVisibility(View.GONE);
+            btnHomeIcon.setVisibility(View.VISIBLE);
         }  else if (v.getId() == R.id.btnPionierReg){
             Intent intentPionier = new Intent(Pfafdigeschichte.this, Pionier.class);
             startActivity(intentPionier);
@@ -89,7 +92,7 @@ public class Pfafdigeschichte extends AppCompatActivity implements View.OnClickL
         Button btnSonstigesReg = findViewById(R.id.btnSonstigesReg);
         btnSonstigesReg.setOnClickListener(this);
 
-        Button btnHomeIcon = findViewById(R.id.btnHomeIcon);
+        btnHomeIcon = findViewById(R.id.btnHomeIcon);
         btnHomeIcon.setOnClickListener(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

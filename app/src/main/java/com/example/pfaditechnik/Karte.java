@@ -17,6 +17,7 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
     private Button btnHomeReg;
     private RelativeLayout relRegister;
     private Button btnHamburger;
+    private Button btnHomeIcon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +51,7 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
         Button btnSonstigesReg = findViewById(R.id.btnSonstigesReg);
         btnSonstigesReg.setOnClickListener(this);
 
-        Button btnHomeIcon = findViewById(R.id.btnHomeIcon);
+        btnHomeIcon = findViewById(R.id.btnHomeIcon);
         btnHomeIcon.setOnClickListener(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -65,11 +66,13 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
         if (v.getId() == R.id.btnHamburger) {
             relRegister.setVisibility(View.VISIBLE);
             btnHamburger.setVisibility(View.GONE);
+            btnHomeIcon.setVisibility(View.GONE);
             btnHomeReg.setVisibility(View.VISIBLE);
         } else if (v.getId() == R.id.btnHomeReg) {
             relRegister.setVisibility(View.GONE);
             btnHamburger.setVisibility(View.VISIBLE);
             btnHomeReg.setVisibility(View.GONE);
+            btnHomeIcon.setVisibility(View.VISIBLE);
         } else if (v.getId() == R.id.btnPionierReg){
             Intent intentPionier = new Intent(Karte.this, Pionier.class);
             startActivity(intentPionier);
