@@ -8,6 +8,83 @@
     tools:context=".Samariter"
     android:background="@color/lightgreen">
 
+
+
+    <LinearLayout
+        android:id="@+id/linLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imgSamariter"
+            android:src="@drawable/erstehilfe"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnVerhalten"
+            android:text="Verhalten bei einem Unfall"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnVerbände"
+            android:text="Verbände"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNotrufnummern"
+            android:text="Notrufnummern"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relVerhalten"
+        android:background="@color/lightgreen"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitleVerhalten"
+            android:text="Verhalten bei einem Unfall"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+            
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSamariter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Samariter"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btnHomeIcon"
         android:layout_width="75dp"

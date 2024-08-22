@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intentKarte = new Intent(MainActivity.this, Karte.class);
             startActivity(intentKarte);
         } else if (v.getId() == R.id.btnGeschichteReg || v.getId() == R.id.btnGeschichteHome) {
-            Intent intentGeschichte = new Intent(MainActivity.this, Pfafdigeschichte.class);
+            Intent intentGeschichte = new Intent(MainActivity.this, Pfadigeschichte.class);
             startActivity(intentGeschichte);
         } else if (v.getId() == R.id.btnSonstigesReg) {
             Intent intentSonstiges = new Intent(MainActivity.this, Sonstiges.class);

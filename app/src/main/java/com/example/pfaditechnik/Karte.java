@@ -89,7 +89,7 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
             Intent intentKarte = new Intent(Karte.this, Karte.class);
             startActivity(intentKarte);
         } else if (v.getId() == R.id.btnGeschichteReg) {
-            Intent intentGeschichte = new Intent(Karte.this, Pfafdigeschichte.class);
+            Intent intentGeschichte = new Intent(Karte.this, Pfadigeschichte.class);
             startActivity(intentGeschichte);
         } else if (v.getId() == R.id.btnSonstigesReg) {
             Intent intentSonstiges = new Intent(Karte.this, Sonstiges.class);

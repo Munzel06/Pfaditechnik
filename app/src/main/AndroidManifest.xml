@@ -30,7 +30,7 @@
             android:name=".Samariter"
             android:exported="false" />
         <activity
-            android:name=".Pfafdigeschichte"
+            android:name=".Pfadigeschichte"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

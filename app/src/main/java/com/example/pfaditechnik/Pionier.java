@@ -90,7 +90,7 @@ public class Pionier extends AppCompatActivity implements View.OnClickListener {
             Intent intentKarte = new Intent(Pionier.this, Karte.class);
             startActivity(intentKarte);
         } else if (v.getId() == R.id.btnGeschichteReg) {
-            Intent intentGeschichte = new Intent(Pionier.this, Pfafdigeschichte.class);
+            Intent intentGeschichte = new Intent(Pionier.this, Pfadigeschichte.class);
             startActivity(intentGeschichte);
         } else if (v.getId() == R.id.btnSonstigesReg) {
             Intent intentSonstiges = new Intent(Pionier.this, Sonstiges.class);

@@ -90,7 +90,7 @@ public class Ubermittlung extends AppCompatActivity implements View.OnClickListe
             Intent intentKarte = new Intent(Ubermittlung.this, Karte.class);
             startActivity(intentKarte);
         } else if (v.getId() == R.id.btnGeschichteReg) {
-            Intent intentGeschichte = new Intent(Ubermittlung.this, Pfafdigeschichte.class);
+            Intent intentGeschichte = new Intent(Ubermittlung.this, Pfadigeschichte.class);
             startActivity(intentGeschichte);
         } else if (v.getId() == R.id.btnSonstigesReg) {
             Intent intentSonstiges = new Intent(Ubermittlung.this, Sonstiges.class);

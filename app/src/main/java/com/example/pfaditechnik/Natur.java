@@ -90,7 +90,7 @@ public class Natur extends AppCompatActivity implements View.OnClickListener {
             Intent intentKarte = new Intent(Natur.this, Karte.class);
             startActivity(intentKarte);
         } else if (v.getId() == R.id.btnGeschichteReg) {
-            Intent intentGeschichte = new Intent(Natur.this, Pfafdigeschichte.class);
+            Intent intentGeschichte = new Intent(Natur.this, Pfadigeschichte.class);
             startActivity(intentGeschichte);
         } else if (v.getId() == R.id.btnSonstigesReg) {
             Intent intentSonstiges = new Intent(Natur.this, Sonstiges.class);

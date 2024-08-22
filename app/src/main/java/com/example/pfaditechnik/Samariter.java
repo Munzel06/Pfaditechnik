@@ -69,35 +69,45 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
             btnHamburger.setVisibility(View.GONE);
             btnHomeReg.setVisibility(View.VISIBLE);
             btnHomeIcon.setVisibility(View.GONE);
-        } else if (v.getId() == R.id.btnHomeReg) {
+        }
+        else if (v.getId() == R.id.btnHomeReg) {
             relRegister.setVisibility(View.GONE);
             btnHamburger.setVisibility(View.VISIBLE);
             btnHomeReg.setVisibility(View.GONE);
             btnHomeIcon.setVisibility(View.VISIBLE);
-        }  else if (v.getId() == R.id.btnPionierReg){
+        }
+        else if (v.getId() == R.id.btnPionierReg){
             Intent intentPionier = new Intent(Samariter.this, Pionier.class);
             startActivity(intentPionier);
-        } else if (v.getId() == R.id.btnSamariterReg) {
+        }
+        else if (v.getId() == R.id.btnSamariterReg) {
             Intent intentSamariter = new Intent(Samariter.this, Samariter.class);
             startActivity(intentSamariter);
-        } else if (v.getId() == R.id.btnUbermittlungReg) {
+        }
+        else if (v.getId() == R.id.btnUbermittlungReg) {
             Intent intentUbermittlung = new Intent(Samariter.this, Ubermittlung.class);
             startActivity(intentUbermittlung);
-        } else if (v.getId() == R.id.btnNaturReg) {
+        }
+        else if (v.getId() == R.id.btnNaturReg) {
             Intent intentNatur = new Intent(Samariter.this, Natur.class);
             startActivity(intentNatur);
-        } else if (v.getId() == R.id.btnKarteReg) {
+        }
+        else if (v.getId() == R.id.btnKarteReg) {
             Intent intentKarte = new Intent(Samariter.this, Karte.class);
             startActivity(intentKarte);
-        } else if (v.getId() == R.id.btnGeschichteReg) {
-            Intent intentGeschichte = new Intent(Samariter.this, Pfafdigeschichte.class);
+        }
+        else if (v.getId() == R.id.btnGeschichteReg) {
+            Intent intentGeschichte = new Intent(Samariter.this, Pfadigeschichte.class);
             startActivity(intentGeschichte);
-        } else if (v.getId() == R.id.btnSonstigesReg) {
+        }
+        else if (v.getId() == R.id.btnSonstigesReg) {
             Intent intentSonstiges = new Intent(Samariter.this, Sonstiges.class);
             startActivity(intentSonstiges);
-        } else if (v.getId() == R.id.btnHomeIcon) {
+        }
+        else if (v.getId() == R.id.btnHomeIcon) {
             Intent intentHome = new Intent(Samariter.this, MainActivity.class);
             startActivity(intentHome);
         }
+
     }
 }
