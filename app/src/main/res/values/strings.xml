@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
+    <string name="AmpelsystemErklärung">Wenn man an einen Unfallort kommt geht man zuerst das Ampelsystem durch. \n
+        Ampelsystem: \n\t
+        Rot: Übersicht verschaffen über Gelände und Umgebung, Zahl der Patienten, Art des Unfalls und Schweregrad der Verletzung \n\t
+        Orange: Überlegen was als nächstes getan werden muss, können Helfer eingesetzt werden (wo, wie)?, Ablauf der Handlung überlegen \n\t
+        Grün: Handeln was zuvor überlegt wurde Ablauf: \n\t\t
+        Unfallplatz sichern \n\t\t
+        Verletzte aus der Gefahrenzone bringen \n\t\t
+        Lebensrettende Massnahmen (ABC) \n\t\t
+        Alarmieren (Helferjob) \n\t\t
+        Weitere 1.Hilfe Massnahmen\n\t\t
+        Patient Überwachen\n\t\t
+        Schutz vor Witterungseinflüsse \n\t\t
+        Rettungsdienste einweisen
+
+    </string>
+
+    <string name="hinweiseVerbände">
+        \u2022 Der Verband sollte das Blut nicht abdrücken \n
+        \u2022 Lege den Verband herzwärts an \n \u2022
+        Ein Verband sollte Rutschfest, Steril und trocken sein \n \u2022
+        Verbände nach ein paar Stunden Kontrollieren
+    </string>
+
+    <string name="verbandTypen">
+        <b>Deckverband: </b>dient v.a. dem Schutz vor Verunreinigungen; liegt losw auf der Wunde (z.B. bei Verbrennungen) \n
+        <b>Druckverband: </b>Stoppt Blutungen; übt starken örtlichen Druck auf die Wunde aus \n
+        <b>Stützverband: </b>dient als Stütze für ein verletztes Körperglied; wird satt angelegt
+    </string>
 </resources>

@@ -58,30 +58,174 @@
         android:layout_height="match_parent"
         android:id="@+id/relVerhalten"
         android:background="@color/lightgreen"
+        android:visibility="gone">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollVerhalten"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTitleVerhalten"
+                    android:text="Verhalten bei einem Unfall"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="1. Ampelsystem"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/imgAmpel"
+                    android:src="@drawable/ampelsystem"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/AmpelsystemErklärung"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="2. ABC"/>
+
+                <!-- TODO: Integrate a picture of ABC -->
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout> <!-- Verhalten -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relVerbände"
+        android:background="@color/lightgreen"
         android:visibility="visible">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtTitleVerhalten"
-            android:text="Verhalten bei einem Unfall"
-            android:layout_marginTop="80dp"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/black"
-            android:textSize="20dp"/>
-            
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verbände"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hinweise zu Verbänden"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/hinweiseVerbände" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Verbandtypen"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verbandTypen"
+                    android:textSize="15dp"/>
 
 
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout> <!-- Verbände -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relNotrufNummern"
+        android:background="@color/lightgreen"
+        android:visibility="visible">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+144"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:clickable="true"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </ScrollView>
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/txtSamariter"
+    <Button
+        android:id="@+id/btnSamariter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:text="Samariter"
-        android:textColor="@color/black"
+        style="@style/ButtonInvisible"
         android:textSize="25dp"
         android:textStyle="bold" />
 

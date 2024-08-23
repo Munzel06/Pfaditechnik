@@ -1,10 +1,12 @@
 package com.example.pfaditechnik;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,8 +18,10 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
 
     private Button btnHomeReg;
     private RelativeLayout relRegister;
+    private RelativeLayout relVerhalten;
     private Button btnHamburger;
     private Button btnHomeIcon;
+    private Button btnSamariter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +33,16 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
+        Button btnVerhalten = findViewById(R.id.btnVerhalten);
+        btnVerhalten.setOnClickListener(this);
+        btnSamariter = findViewById(R.id.btnSamariter);
+        btnSamariter.setOnClickListener(this);
+
         relRegister = findViewById(R.id.relRegister);
+        relVerhalten = findViewById(R.id.relVerhalten);
+
+        TextView txtPhone = findViewById(R.id.phoneTextView);
+        txtPhone.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -108,6 +121,16 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
             Intent intentHome = new Intent(Samariter.this, MainActivity.class);
             startActivity(intentHome);
         }
-
+        else if (v.getId() == R.id.btnVerhalten) {
+            relVerhalten.setVisibility(View.VISIBLE);
+        }
+        else if (v.getId() == R.id.btnSamariter) {
+            relVerhalten.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.phoneTextView) {
+            String phoneNumber = "144";
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + phoneNumber));
+            startActivity(dialIntent);
+        }
     }
 }
