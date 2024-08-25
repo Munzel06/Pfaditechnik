@@ -94,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="1. Ampelsystem"/>
+                    android:text="Ampelsystem"/>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -109,14 +109,6 @@
                     android:text="@string/AmpelsystemErklärung"
                     android:textSize="15dp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="2. ABC"/>
-
-                <!-- TODO: Integrate a picture of ABC -->
-
             </LinearLayout>
         </ScrollView>
 
@@ -127,7 +119,7 @@
         android:layout_height="match_parent"
         android:id="@+id/relVerbände"
         android:background="@color/lightgreen"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -175,10 +167,46 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/verbandTypen"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:text="Druckverband"/>
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/druckverband"
+                    android:layout_marginTop="5dp"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/druckVerband"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Deckverband"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/aehrenverband"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/deckVerband"/>
 
             </LinearLayout>
 
@@ -191,7 +219,7 @@
         android:layout_height="match_parent"
         android:id="@+id/relNotrufNummern"
         android:background="@color/lightgreen"
-        android:visibility="visible">
+        android:visibility="gone">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -206,17 +234,197 @@
                 android:gravity="center_horizontal">
 
                 <TextView
-                    android:id="@+id/phoneTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+144"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:clickable="true"
-                    android:textSize="16sp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Notrufnummern"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ambulanz"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtAmbulanz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="144"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:clickable="true"
+                            android:padding="8dp"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Polizei"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtPolizei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="117"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:clickable="true"
+                            android:padding="8dp"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Feuerwehr"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtFeuerwehr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="118"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:clickable="true"
+                            android:padding="8dp"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="REGA"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtREGA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1414"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:clickable="true"
+                            android:padding="8dp"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tox-Zentrum*"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtToxZentrum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="145"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:clickable="true"
+                            android:padding="8dp"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pfadi Help-Line"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtHelpline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0800 22 36 39"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:clickable="true"
+                            android:padding="8dp"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* das Toxzentrum gibt nur Informationen über Vergiftungen und hat keine Fahrzeuge oder Ärzte die es schicken kann"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Die 6 W-Fragen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sechsWFragen"
+                    android:textSize="15dp"/>
 
             </LinearLayout>
         </ScrollView>
-    </RelativeLayout>
+    </RelativeLayout> <!-- Notrufnummern -->
 
     <Button
         android:id="@+id/btnSamariter"

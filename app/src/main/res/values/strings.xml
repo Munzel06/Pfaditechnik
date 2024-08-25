@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
+
+    <string name="hanfseil">
+        Merkmale: \n \u2022
+        Braun und gedreht \n \u2022
+        Geringe Dehnung \n \u2022
+        Verrottet schnell \n \u2022
+        Sehr Temperaturbeständig \n \u2022
+        Ca. 800kg Reissfestigkeit (10mm \u00d8)\n \u2022
+        Besteht aus Naturfasern \n \u2022
+        Seil verkürzt sich beim Nasswerden \n \n
+        Wird verwendet für Pioniertechnik und Seilbrücken
+    </string>
+
     <string name="AmpelsystemErklärung">Wenn man an einen Unfallort kommt geht man zuerst das Ampelsystem durch. \n
         Ampelsystem: \n\t
         Rot: Übersicht verschaffen über Gelände und Umgebung, Zahl der Patienten, Art des Unfalls und Schweregrad der Verletzung \n\t
@@ -27,5 +40,26 @@
         <b>Deckverband: </b>dient v.a. dem Schutz vor Verunreinigungen; liegt losw auf der Wunde (z.B. bei Verbrennungen) \n
         <b>Druckverband: </b>Stoppt Blutungen; übt starken örtlichen Druck auf die Wunde aus \n
         <b>Stützverband: </b>dient als Stütze für ein verletztes Körperglied; wird satt angelegt
+    </string>
+
+    <string name="druckVerband">
+        <b>Verwendung:</b> Schnittwunden, Starke Blutungen (z.B. Hauptschlagader am Handgelenk verletzt) \n
+        <b>Vorgehen:</b> \n 1. Patient hinlegen \n 2. Verletztes Körperteil hochhalten \n 3. Einige Schichten Verband oder Wundauflage über die Wunde legen \n 4. Druckpolster (weiches Material z.B. 2. Verband) auf die Wundauflagen legen \n
+        5. Mit dem Verband das Druckpolster auf die Wunde pressen \n 6. Bei bedarf 2. Druckverband darüber machen \n 7. Patient überwachen und zum Arzt/Spital bringen
+    </string>
+
+    <string name="deckVerband">
+        <b>Verwendung:</b> Grossflächichge schürfwunden, Verbrenungen \n
+        <b>Vorgehen:</b> \n 1. Verband einige male neben der Wunde um das Körperteil wickeln \n 2. Verband im Muster wei bei B über die Wunde wickeln \n 3. Verband am Ende befestigen
+    </string>
+
+    <string name="sechsWFragen">
+        Wenn man eine der Notrufnummern angerufen hat, wird einem der Notruf die 6-W-Fragen stellen. Diese sind nach der Wichtigkeit geordnet. \n\n
+        <b>Wer? </b>Name und Vorname des Anrufers \n
+        <b>Was? </b>Art des Unfalls \n
+        <b>Wann? </b>Zeitpunkt des Unfalls \n
+        <b>Wo? </b>Ort des Unfalls \n
+        <b>Wieviele? </b>Anzahl der Patienten, Art der Verletzungen \n
+        <b>Weiteres? </b>Weitere wichtige Informationen
     </string>
 </resources>

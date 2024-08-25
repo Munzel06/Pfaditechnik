@@ -19,6 +19,8 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
     private Button btnHomeReg;
     private RelativeLayout relRegister;
     private RelativeLayout relVerhalten;
+    private RelativeLayout relVerbände;
+    private RelativeLayout relNotrufnummern;
     private Button btnHamburger;
     private Button btnHomeIcon;
     private Button btnSamariter;
@@ -33,16 +35,41 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
-        Button btnVerhalten = findViewById(R.id.btnVerhalten);
-        btnVerhalten.setOnClickListener(this);
+
         btnSamariter = findViewById(R.id.btnSamariter);
         btnSamariter.setOnClickListener(this);
 
         relRegister = findViewById(R.id.relRegister);
         relVerhalten = findViewById(R.id.relVerhalten);
+        relVerbände = findViewById(R.id.relVerbände);
+        relNotrufnummern = findViewById(R.id.relNotrufNummern);
 
-        TextView txtPhone = findViewById(R.id.phoneTextView);
-        txtPhone.setOnClickListener(this);
+        TextView txtAmbulanz = findViewById(R.id.txtAmbulanz);
+        txtAmbulanz.setOnClickListener(this);
+
+        TextView txtPolizei = findViewById(R.id.txtPolizei);
+        txtPolizei.setOnClickListener(this);
+
+        TextView txtFeuerwehr = findViewById(R.id.txtFeuerwehr);
+        txtFeuerwehr.setOnClickListener(this);
+
+        TextView txtREGA = findViewById(R.id.txtREGA);
+        txtREGA.setOnClickListener(this);
+
+        TextView txtToxZentrum = findViewById(R.id.txtToxZentrum);
+        txtToxZentrum.setOnClickListener(this);
+
+        TextView txtHelpline = findViewById(R.id.txtHelpline);
+        txtHelpline.setOnClickListener(this);
+
+        Button btnNotrufnummern = findViewById(R.id.btnNotrufnummern);
+        btnNotrufnummern.setOnClickListener(this);
+
+        Button btnVerhalten = findViewById(R.id.btnVerhalten);
+        btnVerhalten.setOnClickListener(this);
+
+        Button btnVerbände = findViewById(R.id.btnVerbände);
+        btnVerbände.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -126,8 +153,47 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
         }
         else if (v.getId() == R.id.btnSamariter) {
             relVerhalten.setVisibility(View.GONE);
-        } else if (v.getId() == R.id.phoneTextView) {
+            relVerbände.setVisibility(View.GONE);
+            relNotrufnummern.setVisibility(View.GONE);
+        }
+        else if (v.getId() == R.id.btnVerbände) {
+            relVerbände.setVisibility(View.VISIBLE);
+        }
+        else if (v.getId() == R.id.btnNotrufnummern) {
+            relNotrufnummern.setVisibility(View.VISIBLE);
+        }
+        else if (v.getId() == R.id.txtAmbulanz) {
             String phoneNumber = "144";
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + phoneNumber));
+            startActivity(dialIntent);
+        }
+        else if (v.getId() == R.id.txtPolizei) {
+            String phoneNumber = "117";
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + phoneNumber));
+            startActivity(dialIntent);
+        }
+        else if (v.getId() == R.id.txtFeuerwehr) {
+            String phoneNumber = "118";
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + phoneNumber));
+            startActivity(dialIntent);
+        }
+        else if (v.getId() == R.id.txtREGA) {
+            String phoneNumber = "1414";
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + phoneNumber));
+            startActivity(dialIntent);
+        }
+        else if (v.getId() == R.id.txtToxZentrum) {
+            String phoneNumber = "145";
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + phoneNumber));
+            startActivity(dialIntent);
+        }
+        else if (v.getId() == R.id.txtHelpline) {
+            String phoneNumber = "0800223639";
             Intent dialIntent = new Intent(Intent.ACTION_DIAL);
             dialIntent.setData(Uri.parse("tel:" + phoneNumber));
             startActivity(dialIntent);
