@@ -1,5 +1,100 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
+    
+    <string name="Samariterknoten">
+        <b>Verwendung: </b>Verbindung zwei gleich dicker Seile \n
+        <b>Positive Eigenschaften: </b>Einfach zu machen, leicht straff zu ziehen und flach\n
+        <b>Negative Eigenschaften: </b>Öffnet sich bei starker Belastung
+    </string>
+    
+    <string name="Weber">
+        <b>Verwendung: </b>Verbindung zwei ungleich dicken Seilen\n
+        <b>Positive Eigenschaften: </b>Einfach zu machen, leicht straff zu ziehen \n
+        <b>Negative Eigenschaften: </b>Öffnet sich bei starker Belastung
+    </string>
+    
+    <string name="Fischer">
+        <b>Verwendung: </b>Verschiebbare verbindung zweier Seile\n
+        <b>Positive Eigenschaften: </b>Hält sicher, geringer verringerung der Reissfestigkeit, verschiebbar \n
+        <b>Negative Eigenschaften: </b>Schwer zu öffnen
+    </string>
+
+    <string name="Achter">
+        <b>Verwendung: </b>Schlinge zum Anseilen \n
+        <b>Positive Eigenschaften: </b>Hält sicher, lässt sich leicht öffnen \n
+        <b>Negative Eigenschaften: </b> -
+    </string>
+    
+    <string name="Bretzeli">
+        <b>Verwendung: </b>Seilbefestigung an dünnen Gegenständen \n
+        <b>Positive Eigenschaften: </b>Schnell geknöpft \n
+        <b>Negative Eigenschaften: </b>Mühsam zu Öffnen
+    </string>
+    
+    <string name="Maurer">
+        <b>Verwendung: </b>Seilbefestigung an dicken Gegenständen \n
+        <b>Positive Eigenschaften: </b>Einfach zu öffnen \n
+        <b>Negative Eigenschaften: </b>Nur eine Zugrichtung, hält nur bei Belastung
+    </string>
+    
+    <string name="Fläschli">
+        <b>Verwendung: </b>Zulaufende Schlinge für Pakete, Strickleitern \n
+        <b>Positive Eigenschaften: </b>Einfach zu knöpfen \n
+        <b>Negative Eigenschaften: </b>Nur eine Schlaufe und Zugrichtung, mühsam zu öffnen
+    </string>
+    
+    <string name="Fuhrmann">
+        <b>Verwendung: </b>Zulaufende Schlinge für Spanner \n
+        <b>Positive Eigenschaften: </b>Besser lösbar als Fläschli/Päckli \n
+        <b>Negative Eigenschaften: </b>Nur eine Schlaufe und Zugrichtung, mühsam zu öffnen
+    </string>
+    
+    <string name="Anker">
+        <b>Verwendung: </b>Befestigung einer Schlaufe \n
+        <b>Positive Eigenschaften: </b>Einfach zu knöpfen \n
+        <b>Negative Eigenschaften: </b>Seitliches verrutschen möglich, gleicher Zug an beiden Enden wird benötigt
+    </string>
+    
+    <string name="Halbmastwurf">
+        <b>Verwendung: </b>Abseilen von Lasten \n
+        <b>Positive Eigenschaften: </b>Gute Kontrolle von Lasten \n
+        <b>Negative Eigenschaften: </b>Schnell falsch geknöpft, schwere Handhabung
+    </string>
+
+    <string name="Achterschlinge">
+        <b>Verwendung: </b>Fixieren eines Seiles \n
+        <b>Positive Eigenschaften: </b>Hält sehr gut, schräger Zug möglich \n
+        <b>Negative Eigenschaften: </b>Mühsam zu öffnen
+    </string>
+
+    <string name="Krawattenknopf">
+        <b>Verwendung: </b>Zierknoten zum binden der Pfadikrawatte \n
+        <b>Positive Eigenschaften: </b>Flacher schöner Knoten \n
+        <b>Negative Eigenschaften: </b>Mühsam zu öffnen
+    </string>
+    
+    <string name="statikseil">
+        Merkmale: \n \u2022
+        Farbig und Geflochten \n \u2022
+        Geringe Dehnung \n \u2022
+        Temperaturbeständig bis ca. 100°C \n \u2022
+        Ca. 3000kg Reissfestigkeit (10mm \u00d8) \n \u2022
+        Besteht aus Nylon \n \u2022
+        Geringe Wasseraufnahme \n\n
+        Wird für Seilbahnen, Strickleitern und Lagerbauten
+    </string>
+
+    <string name="bergseil">
+        Merkmale: \n \u2022
+        Farbig und Geflochten \n \u2022
+        Grosse Dehnung\n \u2022
+        Temperaturbeständig bis ca. 100°C \n \u2022
+        Ca. 2000kg Reissfestigkeit (10mm \u00d8) \n \u2022
+        Besteht aus Kunstfasern \n \u2022
+        Tiefe Kanten und Scheuerfestigkeit \n \u2022
+        Geringe Wasseraufnahem \n\n
+        Wird zum Abseilen verwendet
+    </string>
 
     <string name="hanfseil">
         Merkmale: \n \u2022

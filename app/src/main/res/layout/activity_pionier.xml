@@ -25,7 +25,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/seilkunde"
+            android:id="@+id/btnSeilkunde"
             android:text="Seilkunde"
             android:textColor="@color/black"
             android:layout_marginBottom="10dp"
@@ -34,7 +34,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/pfadiKnoten"
+            android:id="@+id/btnPfadiKnoten"
             android:text="Pfadiknoten"
             android:textColor="@color/black"
             android:layout_marginBottom="10dp"
@@ -43,7 +43,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/krawattenKnopf"
+            android:id="@+id/btnKrawattenKnopf"
             android:text="Krawattenknopf"
             android:textColor="@color/black"
             android:layout_marginBottom="10dp"
@@ -55,7 +55,7 @@
         android:layout_height="match_parent"
         android:id="@+id/relSeilkunde"
         android:background="@color/lightgreen"
-        android:visibility="visible">
+        android:visibility="gone">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -108,6 +108,303 @@
                     android:src="@drawable/bergseil"
                     />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/bergseil"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Statikseil"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/statikseil"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/statikseil"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout> <!-- Seilkunde -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relKnoten"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pfadiknoten"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Samariter"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:src="@drawable/samariterknoten"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Samariterknoten"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Weber"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/weberknoten"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Weber"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Fischer/Spierenstich"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/fischer"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fischer"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Gesteckter Achter"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:src="@drawable/achter"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Achter"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Bretzeli"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bretzeli__1_"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Bretzeli"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Maurer"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="260dp"
+                    android:src="@drawable/maurer"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Maurer"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Fläschli/Päckli"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="260dp"
+                    android:src="@drawable/flaschli"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fläschli"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Fuhrmann"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="240dp"
+                    android:src="@drawable/fuhrmann"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fuhrmann"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Anker"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:src="@drawable/anker"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Anker"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Halbmastwurf"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:src="@drawable/halbmastwurf"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Halbmastwurf"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Achterschlinge/Mastwurf"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/achterschlinge"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Achterschlinge"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout> <!--Pfadiknoten-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relKrawattenKnopf"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Krawattenknopf"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/krawattenknopf"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Krawattenknopf"
+                    android:layout_marginTop="5dp"/>
+
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
@@ -121,7 +418,8 @@
         android:textSize="25dp"
         android:textStyle="bold"
         android:text="Pionier"
-        style="@style/ButtonInvisible"/>
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/btnHomeIcon"

@@ -18,6 +18,10 @@ public class Pionier extends AppCompatActivity implements View.OnClickListener {
     private RelativeLayout relRegister;
     private Button btnHamburger;
     private Button btnHomeIcon;
+    private RelativeLayout relSeilkunde;
+    private RelativeLayout relKnoten;
+    private RelativeLayout relKrawattenKnopf;
+    private Button btnPionier;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +33,22 @@ public class Pionier extends AppCompatActivity implements View.OnClickListener {
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
+        btnPionier = findViewById(R.id.btnPionier);
+        btnPionier.setOnClickListener(this);
+
         relRegister = findViewById(R.id.relRegister);
+        relSeilkunde = findViewById(R.id.relSeilkunde);
+        relKnoten = findViewById(R.id.relKnoten);
+        relKrawattenKnopf = findViewById(R.id.relKrawattenKnopf);
+
+        Button btnKrawattenKnopf = findViewById(R.id.btnKrawattenKnopf);
+        btnKrawattenKnopf.setOnClickListener(this);
+
+        Button btnKnoten = findViewById(R.id.btnPfadiKnoten);
+        btnKnoten.setOnClickListener(this);
+
+        Button btnSeilkunde = findViewById(R.id.btnSeilkunde);
+        btnSeilkunde.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -98,6 +117,16 @@ public class Pionier extends AppCompatActivity implements View.OnClickListener {
         } else if (v.getId() == R.id.btnHomeIcon) {
             Intent intentHome = new Intent(Pionier.this, MainActivity.class);
             startActivity(intentHome);
+        } else if (v.getId() == R.id.btnPionier) {
+            relSeilkunde.setVisibility(View.GONE);
+            relKnoten.setVisibility(View.GONE);
+            relKrawattenKnopf.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnSeilkunde) {
+            relSeilkunde.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnPfadiKnoten) {
+            relKnoten.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnKrawattenKnopf) {
+            relKrawattenKnopf.setVisibility(View.VISIBLE);
         }
     }
 }

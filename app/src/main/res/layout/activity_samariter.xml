@@ -425,7 +425,6 @@
             </LinearLayout>
         </ScrollView>
     </RelativeLayout> <!-- Notrufnummern -->
-
     <Button
         android:id="@+id/btnSamariter"
         android:layout_width="wrap_content"
@@ -433,10 +432,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Samariter"
-        style="@style/ButtonInvisible"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
         android:textSize="25dp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        />
     <Button
         android:id="@+id/btnHomeIcon"
         android:layout_width="75dp"
