@@ -16,8 +16,10 @@ public class Sonstiges extends AppCompatActivity implements View.OnClickListener
 
     private Button btnHomeReg;
     private RelativeLayout relRegister;
+    private RelativeLayout relPacken;
     private Button btnHamburger;
     private Button btnHomeIcon;
+    private Button btnSonstiges;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,14 @@ public class Sonstiges extends AppCompatActivity implements View.OnClickListener
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
+        btnSonstiges = findViewById(R.id.btnSonstiges);
+        btnSonstiges.setOnClickListener(this);
+
         relRegister = findViewById(R.id.relRegister);
+        relPacken = findViewById(R.id.relPacken);
+
+        Button btnPacken = findViewById(R.id.btnPacken);
+        btnPacken.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -98,6 +107,10 @@ public class Sonstiges extends AppCompatActivity implements View.OnClickListener
         } else if (v.getId() == R.id.btnHomeIcon) {
             Intent intentHome = new Intent(Sonstiges.this, MainActivity.class);
             startActivity(intentHome);
+        } else if (v.getId() == R.id.btnSonstiges) {
+            relPacken.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnPacken) {
+            relPacken.setVisibility(View.VISIBLE);
         }
     }
 }

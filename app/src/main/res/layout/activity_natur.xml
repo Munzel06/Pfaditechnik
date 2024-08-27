@@ -8,6 +8,501 @@
     tools:context=".Natur"
     android:background="@color/lightgreen">
 
+    <LinearLayout
+        android:id="@+id/linLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/natur"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTiere"
+            android:text="Einheimische Tiere"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTierspuren"
+            android:text="Tierspuren"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRecycling"
+            android:text="Recycling"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relTiere"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Säugetiere"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Igel"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/igel"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maulwurf"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/maulwurf"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spitzmaus"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/spitzmaus"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fledermaus"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/fledermaus"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feldhase"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/feldhase"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eichhörnchen"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/eichhoernchen"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feldmaus"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/feldmaus"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gams"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/gams"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steinbock"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/steinbock"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reh"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/reh"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rothirsch"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/rothirsch"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fuchs"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/fuchs"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dachs"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/dachs"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steinmarder"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/steinmarder"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Vögel"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ente"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/ente"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kuckuck"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/kuckuck"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grünspecht"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/gruenspecht"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grünfink"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/gruenfink"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bachstelze"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bachstelze"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waldkauz"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/waldkauz"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uhu"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/uhu"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rotmilan"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/rotmilan"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mäusebussard"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/mausebussard"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Habicht"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/habicht"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Turmfalke"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/turmfalke"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Schlangen"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ringelnatter"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/ringelnatter"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kreuzotter (giftig)"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/kreuzotter"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Amphibien"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feuersalamander"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/feuersalamander"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erdkröte"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/erdkroete"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grasfrosch"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/grasfrosch"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout> <!-- Tiere -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNatur"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Natur und Umwelt"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"/>
+
     <Button
         android:id="@+id/btnHomeIcon"
         android:layout_width="75dp"

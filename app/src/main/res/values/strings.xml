@@ -1,5 +1,56 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
+
+    <string name="PacklisteSoLa">
+        \u2022 Pfadihemd und Krawatte \n \u2022
+        Pfaditäschli \n \u2022
+        Gefüllte Trinkflasche \n \u2022
+        ÖV-Abo \n \u2022
+        Genügend Wechselkleidung für ein oder zwei Wochen \n \u2022
+        Warme Jacke oder Faserpelz \n \u2022
+        Genügend Socken und Unterwäsche \n \u2022
+        Pyjama \n \u2022
+        Turnschuhe \n \u2022
+        Sportliche Kleidung \n \u2022
+        Badekleider und Badetuch \n \u2022
+        Frottéetuch und Waschlappen \n \u2022
+        Regenschutz \n \u2022
+        Sonnenschutz \n \u2022
+        Schlafsack \n \u2022
+        Isoliermatte \n \u2022
+        Toilettenartikel \n \u2022
+        Essgeschirr, Besteck und Becher \n \u2022
+        Sackgeld \n \u2022
+        Sackmesser \n \u2022
+        Taschenlampe \n \u2022
+        Persönliche Medikamente
+    </string>
+
+    <string name="PacklisteHajk">
+        Jede Person einzeln: \n
+        \u2022 Gutes Schuhwerk \n \u2022
+        Witterungsschutz, Sonnenschutz (Schneeschutz) \n \u2022
+        Wasserflasche gefüllt \n \u2022
+        Schlafsack \n \u2022
+        Mätäli \n \u2022
+        Hygieneartikel \n \u2022
+        Taschenlampe \n \n
+        Gepäck zu aufteilen: \n \u2022
+        Blachen für Zelt \n \u2022
+        Zelteinheiten für Zelt\n \u2022
+        Töpfe \n \u2022
+        Lebensmittel \n \u2022
+        Apotheke \n \u2022
+        Feuerzeug \n \u2022
+        Karten
+    </string>
+
+    <string name="GrundsatzPacken">
+        Eine gute Ausrüstung ist sehr wichtig für die erfolgreiche Durchsetzung eines Ausfluges. Wichtig ist, dass bereits vor dem Ausflug überlegt wird, was notwendig, was wünschenswert und was unnötig ist zum mitnehmen. \n\n\t
+        Bei Wanderungen und ähnlichem sollte somit nur das Notwendige Mitgenommen werden um Gewicht zu sparen während bei einem Ausflug mit einem Zug auch mal was unnötiges ins Gepäck darf. \n\n\t
+        Schweres Gepäck wie ein Zelt sollten immer so nah am Rücken im Rucksack verstaut werden wie möglich. Dies macht den Rucksack angenehmer zu tragen. Ausserdem sollte beim packen beachtet werden, wichtige sachen die man schnell braucht (Regenjacke, Essen) oben zu verstauen. \n\n\t
+        Es wird auch sehr empfohlen die eigenen Sachen anzuschreiben damit sie nicht verloren gehen.
+    </string>
     
     <string name="Samariterknoten">
         <b>Verwendung: </b>Verbindung zwei gleich dicker Seile \n

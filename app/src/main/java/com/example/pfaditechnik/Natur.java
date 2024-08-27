@@ -16,6 +16,7 @@ public class Natur extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnHomeReg;
     private RelativeLayout relRegister;
+    private RelativeLayout relTiere;
     private Button btnHamburger;
     private Button btnHomeIcon;
 
@@ -29,7 +30,15 @@ public class Natur extends AppCompatActivity implements View.OnClickListener {
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
+
         relRegister = findViewById(R.id.relRegister);
+        relTiere = findViewById(R.id.relTiere);
+
+        Button btnNatur = findViewById(R.id.btnNatur);
+        btnNatur.setOnClickListener(this);
+
+        Button btnTiere = findViewById(R.id.btnTiere);
+        btnTiere.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -98,6 +107,10 @@ public class Natur extends AppCompatActivity implements View.OnClickListener {
         } else if (v.getId() == R.id.btnHomeIcon) {
             Intent intentHome = new Intent(Natur.this, MainActivity.class);
             startActivity(intentHome);
+        } else if (v.getId() == R.id.btnNatur) {
+            relTiere.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnTiere) {
+            relTiere.setVisibility(View.VISIBLE);
         }
     }
 }

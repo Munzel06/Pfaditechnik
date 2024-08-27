@@ -23,7 +23,8 @@
             android:layout_height="250dp"
             android:id="@+id/imgSamariter"
             android:src="@drawable/erstehilfe"
-            android:layout_marginBottom="50dp"/>
+            android:layout_marginBottom="50dp"
+            />
 
         <Button
             android:layout_width="wrap_content"
@@ -100,7 +101,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:id="@+id/imgAmpel"
-                    android:src="@drawable/ampelsystem"/>
+                    android:src="@drawable/ampelsystem"
+                    android:layout_marginTop="10dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"

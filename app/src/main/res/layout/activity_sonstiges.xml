@@ -8,6 +8,121 @@
     tools:context=".Sonstiges"
     android:background="@color/lightgreen">
 
+
+
+    <LinearLayout
+        android:id="@+id/linLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/pfadilogo"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPacken"
+            android:text="Packen"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relPacken"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Packen"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grundsätze beim Packen"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="260dp"
+                    android:src="@drawable/rucksack_packen_gewicht"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GrundsatzPacken"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Beispiel Packliste 2 Tages Wanderung"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PacklisteHajk"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Beispiel Packliste Sommerlager"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PacklisteSoLa"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSonstiges"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Sonstiges"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"/>
+
     <Button
         android:id="@+id/btnHomeIcon"
         android:layout_width="75dp"
