@@ -17,6 +17,8 @@ public class Natur extends AppCompatActivity implements View.OnClickListener {
     private Button btnHomeReg;
     private RelativeLayout relRegister;
     private RelativeLayout relTiere;
+    private RelativeLayout relSpuren;
+    private RelativeLayout relRecyclen;
     private Button btnHamburger;
     private Button btnHomeIcon;
 
@@ -33,6 +35,14 @@ public class Natur extends AppCompatActivity implements View.OnClickListener {
 
         relRegister = findViewById(R.id.relRegister);
         relTiere = findViewById(R.id.relTiere);
+        relSpuren = findViewById(R.id.relSpuren);
+        relRecyclen = findViewById(R.id.relRecycling);
+
+        Button btnRecyclen = findViewById(R.id.btnRecycling);
+        btnRecyclen.setOnClickListener(this);
+
+        Button btnSpuren = findViewById(R.id.btnTierspuren);
+        btnSpuren.setOnClickListener(this);
 
         Button btnNatur = findViewById(R.id.btnNatur);
         btnNatur.setOnClickListener(this);
@@ -109,8 +119,14 @@ public class Natur extends AppCompatActivity implements View.OnClickListener {
             startActivity(intentHome);
         } else if (v.getId() == R.id.btnNatur) {
             relTiere.setVisibility(View.GONE);
+            relSpuren.setVisibility(View.GONE);
+            relRecyclen.setVisibility(View.GONE);
         } else if (v.getId() == R.id.btnTiere) {
             relTiere.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnTierspuren) {
+            relSpuren.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnRecycling) {
+            relRecyclen.setVisibility(View.VISIBLE);
         }
     }
 }

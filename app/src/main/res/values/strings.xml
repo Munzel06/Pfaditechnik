@@ -1,6 +1,54 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
 
+    <string name="Pet">
+        Aus PET-Flaschen können neue PET-Flaschen hergestellt werden, daher ist es sehr wichtig diese zu Recyceln.
+        PET-Flaschen gehören in die mit blau-gelb markierten Mülltonen. \n\t
+        Plastikflaschen wie Milch-, Öl-, Essig-, Saucen- und Shampooflaschen, Getränkekartons (z. B. Tetra Pak) und andere Verpackungen aus PET gehören nicht in die PET-Sammlung. \n\t
+        Vor dem entsorgen, sollte aus der Flasche immer die Luft rausgelassen werden damit die einzelne Flasche weniger Platz benötigt.
+    </string>
+
+    <string name="Kleidung">
+        Kleidung ist oft in so gutem Zustand, dass sie nocheinmal getragen werden kann und an Secondhandläden weitergegeben wird. Aus nichtmehr tragbarer Kleidung werden Putzlumpen und Füllmaterial gemacht. \n\t
+        Kleidungstücke können in Kleidersäcken gesammelt werden und bei Kleidercontainer oder Strassensammlungen abgegeben werden.
+    </string>
+
+    <string name="Papier">
+        Aus Papier kann Zeitungspapier oder auch Karton gemacht werden.\n\t
+        Papier kann bei der Altpapier-Sammelstelle der abgegeben werden.
+    </string>
+    
+    <string name="Karton">
+        Aus Karton kann wieder Karton gewonnen werden und somit ein haufen Holz gespart werden. \n\t
+        Karton kann meist direkt auf der Kartonsammelstelle der Gemeinde abgegeben werden.
+    </string>
+
+    <string name="Alu">
+        Aluminium kann genau wie Glas unendlich wiederverwendet werden, desshalb ist es sehr wichtig, dass man es Recycelt. \n\t
+        Aluminium kann direkt bei Aluminiumsammelstelle der Gemeinde abgegeben werden. Das Aluminium sollte aber gepresst werden um Platz zu sparen.
+    </string>
+
+    <string name="Glas">
+        Glas kann unendlich lang Recycelt werden, man muss es nur nach Farben trennen \n\t
+        Glas sollte vor dem Recyceln ausgspült werden und danach nach Farben sortiert bei einem Glascontainer entsorgt werden. Getrennt werden: Weiss-, Grün- oder Braunglas. Alle anderen Farben gehören zum Grünglas.
+    </string>
+
+    <string name="Elektro">
+        Elektrische und elektronische Geräte enthalten wertvolle Ressourcen welche wiederverwendet werden können. \n\t
+        Elektrische und elektronische Geräte können auf den meisten Recyclinghöfen der Gemeinden entsorgt werden.
+    </string>
+
+    <string name="Batterien">
+        Batterien bestehen aus seltenen Rohstoffe welche zurückgewonnen werden können wenn man sie Recycelt. Daher sind sie Rückgabenpflichtig und gehören nicht in den Abfall. \n\t
+        Batterien können in den meisten Läden an der Kasse oder in der Recyclingstation des Ladens abgegeben werden.
+    </string>
+
+    <string name="Plastikflaschen">
+        Plastikflaschen können im Gegensatz zu PET-Flaschen nicht wieder zu Flaschen werden, aber aus ihnen entstehen andere Produkte. Plastikflaschen können in Lebensmittelläden wie Coop oder Migros abgegeben werden.\n\t
+        PET-Getränkeflaschen, halbvolle Plastikflaschen, Getränkekartons (z. B. Tetra Pak), Plastikflaschen aus dem Heimwerker-, Garten- und Autobereich, Schalen, Becher, Tuben, Folien, Nachfüllbeutel gehören nicht zu den Plastikflaschen. \n\t
+        Auch hier sollte wie bei den PET-Flaschen die Luft aus der Flasche genommen werden.
+    </string>
+
     <string name="PacklisteSoLa">
         \u2022 Pfadihemd und Krawatte \n \u2022
         Pfaditäschli \n \u2022

@@ -135,7 +135,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="300dp"
-                    android:src="@drawable/feldhase"
+                    android:src="@drawable/feldhasespur"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -167,13 +167,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gams"
+                    android:text="Gämse"
                     android:textSize="20dp"
                     android:layout_marginTop="5dp"/>
 
                 <ImageView
                     android:layout_width="300dp"
-                    android:layout_height="300dp"
+                    android:layout_height="200dp"
                     android:src="@drawable/gams"
                     android:layout_marginTop="5dp"/>
 
@@ -200,7 +200,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/reh"
+                    android:src="@drawable/rehspur"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -213,7 +213,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/rothirsch"
+                    android:src="@drawable/rothirschspur"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -226,7 +226,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/fuchs"
+                    android:src="@drawable/fuchsspur"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -239,7 +239,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/dachs"
+                    android:src="@drawable/dachsspur"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -252,7 +252,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="250dp"
-                    android:src="@drawable/steinmarder"
+                    android:src="@drawable/steinmarderspur"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -491,6 +491,328 @@
         </ScrollView>
     </RelativeLayout> <!-- Tiere -->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relSpuren"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Tierspuren"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Feldhase"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/feldhasespur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Reh"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rehspur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Hirsch"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rothirschspur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Wildschwein"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/wildschweinspur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Fuchs"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fuchsspur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Dachs"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dachsspur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Steinmarder"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/steinmarderspur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Luchs"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/luchsspur"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Eichhörnchen"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/eichhornchenspur"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout> <!-- Tierspuren -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relRecycling"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recycling"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PET-Flaschen"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/pet"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Pet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plastikflaschen"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/plastikflaschen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Plastikflaschen"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batterien"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/batterien"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Batterien"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elektroschrott"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/elektro"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Elektro"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Glas"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/glas"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Glas"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aluminium"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/alu"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Alu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karton"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/karton"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Karton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Papier"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/papier"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Papier"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kleidung"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/kleidung"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Kleidung"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout> <!-- Recycling -->
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -499,7 +821,7 @@
         android:layout_marginTop="10dp"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:text="Natur und Umwelt"
+        android:text="Natur"
         android:background="@android:color/transparent"
         android:textColor="@color/black"/>
 
