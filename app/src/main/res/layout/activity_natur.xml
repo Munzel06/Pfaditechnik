@@ -135,7 +135,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="300dp"
-                    android:src="@drawable/feldhasespur"
+                    android:src="@drawable/feldhase"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -200,7 +200,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/rehspur"
+                    android:src="@drawable/reh"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -213,7 +213,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/rothirschspur"
+                    android:src="@drawable/rothirsch"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -226,7 +226,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/fuchsspur"
+                    android:src="@drawable/fuchs"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -239,7 +239,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="200dp"
-                    android:src="@drawable/dachsspur"
+                    android:src="@drawable/dachs"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -252,7 +252,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="250dp"
-                    android:src="@drawable/steinmarderspur"
+                    android:src="@drawable/steinmarder"
                     android:layout_marginTop="5dp"/>
 
                 <TextView

@@ -16,8 +16,12 @@ public class Ubermittlung extends AppCompatActivity implements View.OnClickListe
 
     private Button btnHomeReg;
     private RelativeLayout relRegister;
+    private RelativeLayout relGeheimschriften;
+    private Button btnUbermittlung;
+
     private Button btnHamburger;
     private Button btnHomeIcon;
+    private RelativeLayout relMorsen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +33,18 @@ public class Ubermittlung extends AppCompatActivity implements View.OnClickListe
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
+        btnUbermittlung = findViewById(R.id.btnUbermittlung);
+        btnUbermittlung.setOnClickListener(this);
+
         relRegister = findViewById(R.id.relRegister);
+        relGeheimschriften = findViewById(R.id.relGeheimschriften);
+        relMorsen = findViewById(R.id.relMorsen);
+
+        Button btnMorsen = findViewById(R.id.btnMorsen);
+        btnMorsen.setOnClickListener(this);
+
+        Button btnGeheimschriften = findViewById(R.id.btnGeheimschriften);
+        btnGeheimschriften.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -98,6 +113,13 @@ public class Ubermittlung extends AppCompatActivity implements View.OnClickListe
         } else if (v.getId() == R.id.btnHomeIcon) {
             Intent intentHome = new Intent(Ubermittlung.this, MainActivity.class);
             startActivity(intentHome);
+        } else if (v.getId() == R.id.btnUbermittlung) {
+            relGeheimschriften.setVisibility(View.GONE);
+            relMorsen.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnGeheimschriften) {
+            relGeheimschriften.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnMorsen) {
+            relMorsen.setVisibility(View.VISIBLE);
         }
     }
 }

@@ -1,6 +1,63 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
 
+    <string name="algKarten">
+        Nebst vielen anderen Sachen ist die Schweiz für ihre guten Karten bekannt. Diese Karten haben ein eigenes Koordinatensystem, dieses richtet sich nach der Sternwarte Bern (2\'600\'000/1\'200\'000).\n\t
+        Karten haben einen Massstab dieser ist das Verkleinerungsverhältniss von der Natur zur Karte bei 1:25\'000 ist ein Objekt auf der Karte 25\'000 mal kleiner als in der Natur. Ausserdem ist bei Karten Norden immer oben. \n\t
+        Die Karten der Schweiz sind nach dem Massstab eingegliedert: \n \u2022
+        1:25'000: Braun, zum Wandern, OL, Spiele \n \u2022
+        1:50'000: Grün, zum Velofahren, Reisen, Planen \n \u2022
+        1:100'000: Rot, zum Velofahren, Autofahren \n \u2022
+        1:200'000: Orange, für Motorradfahrer, Autofahrer \n \u2022
+        1:300'000: Blau, für Motorradfahrer, Autofahrer, Bahnreisende \n \u2022
+        1:500'000: Rot, Eisenbahnnetz, Autobahnen, Autostrassen \n \u2022
+        1:1Million: Grün, Übersichtskarte der Schweiz und Nachbarländer
+    </string>
+
+    <string name="algMorsen">
+        Morsen ist eine Übermittlungsweise bei der jedem Buchstabe eine Abfolge von Punkten (.) und Strichen (-) zugeteilt wurde welche diesen Buchstaben verkörpern. \n\t
+        Die Buchstaben welche häufig verwendet werden sind in der Regel die einfachsten (E = .). Alle Buchstaben haben maximal 4 Zeichen, alle Ziffern haben 5 Zeichen und die Satzzeichen haben 6 Zeichen.
+    </string>
+
+    <string name="Morseschlüssel">
+        Um nicht für jeden Buchstaben die Zeichenfolge lernen zu müssen gibt es den Morseschlüssel (oben). Dieser Funktioniert so: Um herauszufinden wie ein Buchstabe heisst sucht man zuerst den Buchstaben, danach beginnt man oben in der Mitte und Folgt dem Weg in Richtung Buchstabe, immer wenn man über eine Gestrichelte Linie kommt ist es ein Punkt und sonst ist es ein Strich.\n\t
+        Wenn man allerdings etwas vom Morsecode übersetzten will beginnt man wieder oben und immer wenn ein Punkt kommt geht man der gestrichelten Linie nach und sonst der ganzen Linie.
+    </string>
+
+    <string name="Morsearten">
+        <b>Schreiben: </b>Wenn man eine Nachricht in Morsecode aufschreibt, schreibt man nach jedem Buchstaben ein / und am Ende von jedem Wort ein //. Pfadi wäre dann: .--./..-./.-/-../..// \n\t
+        <b>Taschenlampe: </b> In der Nacht kann mit Taschenlampen gemorst werde, dann ist es ein Punkt wenn man die Lampe nur schnell anschaltet und dann wieder ausschaltet und ein Strich, wenn die Lampe länger brennt. Eine kurze Pause ist ein Buchstabenende und ein Wortende ist eine Lange Pause.\n\t
+        <b>Morsescheiben: </b> Wenn man mit einer Morsescheibe morst ist sind die Zeichen wie unten. Anstelle von Morsetafeln können auch Hüte oder Fahnen verwendet werden.
+    </string>
+
+    <string name="Caesar">
+        Bei der Cäsarverschlüsselung verschiebt man alle Buchstaben der Nachricht im Alphabet um einen bestimmten Wert nach hinten.
+        Wenn dieser Wert zwei ist, wird aus einem B ein D. \n\t
+        Wenn man es nun wieder entschlüsseln will muss man den Buchstaben wieder 2 nach vorne verschieben. \n\t
+        <b>Beispiel: </b>Pfadi mit der Verschiebung 3 wird zu Sidgl.
+    </string>
+
+    <string name="Geheimtinte">
+        Geheimtinte ist Tinte mit der man schreibt, die man aber auf dem Papier nicht sieht, bis man die Nachricht über einer Kerze oder ähnlichem erwärmt. \n\t
+        Beispiele für solche Geheimtinten wären Zitronen-, Orangen- und Zwiebelsaft.
+    </string>
+
+    <string name="Freimaurer">
+        Beim Freimaurer Alphabet Macht man wie oben vier Raster immer zwei vom selben typ eines mit und eins ohne Punkte. \n\t
+        Nun bekommt jeder Buchstabe ein Platz in diesem Raster. Um die Nachricht zu verschlüsseln ersetzt man nun jeden Buchsaben mit der Zeichnung des Platzes des Buchstabens.\n\t
+        <b>Beispiel: </b>Pfadi wird zu:
+    </string>
+
+    <string name="Koordinatennetz">
+        Beim Koordinatennetz werden zuerst alle Buchstaben ausser das J in ein 5x5 Gitter geschrieben. Nun schreibt man um das Gitter zu jeder Zeile und zu jeder Spalte einen anderen Buchstaben. Jetzt verschlüsselt man die Nachricht in dem man jeden Buchstaben durch die Koordinaten des Buchstabens ersetzt.\n\t
+        <b>Beispiel: </b>Somit wird im Beispiel oben aus dem Wort Pfadi: MULAKAKOLO
+    </string>
+
+    <string name="algGeheimschriften">
+        Geheimschriften sind dafür da, eine Nachricht geheim vom Sender bis zum Empfänger zu bringen. Um das zu erreichen wird die Nachricht verschlüsselt, damit eine Person, die die Nachricht nicht lesen sollte sie nicht lesen kann.\n\t
+        Um die Nachricht zu verschlüsseln gibt es viele Methoden. Einige schauen wir uns hier an.
+    </string>
+
     <string name="Pet">
         Aus PET-Flaschen können neue PET-Flaschen hergestellt werden, daher ist es sehr wichtig diese zu Recyceln.
         PET-Flaschen gehören in die mit blau-gelb markierten Mülltonen. \n\t
