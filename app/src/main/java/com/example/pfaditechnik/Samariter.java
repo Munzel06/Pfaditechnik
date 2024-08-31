@@ -21,6 +21,7 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
     private RelativeLayout relVerhalten;
     private RelativeLayout relVerbände;
     private RelativeLayout relNotrufnummern;
+    private RelativeLayout relHygiene;
     private Button btnHamburger;
     private Button btnHomeIcon;
     private Button btnSamariter;
@@ -43,6 +44,10 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
         relVerhalten = findViewById(R.id.relVerhalten);
         relVerbände = findViewById(R.id.relVerbände);
         relNotrufnummern = findViewById(R.id.relNotrufNummern);
+        relHygiene = findViewById(R.id.relHygiene);
+
+        Button btnHygiene = findViewById(R.id.btnHygiene);
+        btnHygiene.setOnClickListener(this);
 
         TextView txtAmbulanz = findViewById(R.id.txtAmbulanz);
         txtAmbulanz.setOnClickListener(this);
@@ -155,14 +160,16 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
             relVerhalten.setVisibility(View.GONE);
             relVerbände.setVisibility(View.GONE);
             relNotrufnummern.setVisibility(View.GONE);
+            relHygiene.setVisibility(View.GONE);
         }
         else if (v.getId() == R.id.btnVerbände) {
             relVerbände.setVisibility(View.VISIBLE);
         }
         else if (v.getId() == R.id.btnNotrufnummern) {
             relNotrufnummern.setVisibility(View.VISIBLE);
-        }
-        else if (v.getId() == R.id.txtAmbulanz) {
+        } else if (v.getId() == R.id.btnHygiene) {
+            relHygiene.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.txtAmbulanz) {
             String phoneNumber = "144";
             Intent dialIntent = new Intent(Intent.ACTION_DIAL);
             dialIntent.setData(Uri.parse("tel:" + phoneNumber));

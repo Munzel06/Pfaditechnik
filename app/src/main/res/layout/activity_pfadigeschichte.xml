@@ -8,6 +8,97 @@
     tools:context=".Pfadigeschichte"
     android:background="@color/lightgreen">
 
+    <LinearLayout
+        android:id="@+id/linLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/pfadigeschichte"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTxtGeschichte"
+            android:text="Pfadigeschichte"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relPfadigeschichte"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pfadigeschichte"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bipi"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Pfadigeschichte1"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lady_olave"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pfadigeschichte2"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPfadiGeschichte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Pfadigeschichte"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"/>
+
     <Button
         android:id="@+id/btnHomeIcon"
         android:layout_width="75dp"
@@ -27,56 +118,6 @@
         android:visibility="visible"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"/>
-
-    <TextView
-        android:id="@+id/txtPfadigeschichte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:text="Pfadigeschichte"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:textStyle="bold" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        android:layout_below="@+id/txtPfadigeschichte"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/bipi"
-                android:id="@+id/imgBipi"
-                android:layout_centerHorizontal="true"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imgBipi"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="0dp"
-                android:justificationMode="inter_word"
-                android:textSize="15dp"
-                android:text="Robert Stephenson Smyth Baden-Powell, der Gründer der Pfadfinderbewegung, wurde am 22. Februar 1857 in London geboren. Er fiel durch die Aufnahmeprüfungen der Universität und entschied sich Karriere im Militär zu machen. Er wurde in der Kolonie Indien stationiert wo er auf Spione oder Scouts aufmerksam wurde und deren wichtige Funktion im Kampfgeschehen erkannte. Später wurde er nach Südafrika verlegt, wo er zum ersten Mal seine eigenen Scouts ausbildete, aber immer noch im militärischen Umfeld. Als Baden-Powell, nun besser bekannt als BiPi, eine Stadt aus der Belagerung befreien musste, setzte er seine Scouts erstmals im Gefecht ein und er war erstaunt, wie gut sie ihre Aufgaben bewältigten. Zurück in England beendete BiPi seine Militärische Karriere und sagte: Am Ende meiner Karriere begann ich, die Kunst, junge Leute zu lehren, wie man Krieg macht, umzuwandeln in die Kunst junge Leute zu lehren, in Frieden zu leben; Pfadi ist weit entfernt vom Krieg
-Im Jahre 1907 organisierte er das erste Pfadilager für Jungen auf der Insel Brownsea. Nach dem riesigen Erfolg dieses Lagers schrieb er das Buch Pfadfinder. Das Buch war ein solcher Erfolg, dass überall in England neue Pfadigruppen entstanden und 1909 auch Mädchenabteilungen entstanden unter dem Namen Guides. Im Jahre 1912 heiratete BiPi Olave Saint Clair Soames, welche als Chief Guide die Leitung der Pfadfinderinnen übernahm. 1920 fand das erste Jamboree statt, es nahmen Jugendliche aus 34 Ländern teil. Später wurde BiPi zum World Chief ernannt. Die Pfadibewegung explodierte und um 1993 gab es etwa 25 Millionen Pfadi in über 150 Ländern." />
-        </RelativeLayout>
-    </ScrollView>
-
 
     <RelativeLayout
         android:id="@+id/relRegister"

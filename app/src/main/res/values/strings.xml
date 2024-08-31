@@ -1,16 +1,67 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
 
+    <string name="Körperhygiene">
+        \u2022 Täglich vor dem Essen, vor der Küchenarbeit und nach der Toilette Hände waschen \n\u2022
+        Mindestens einmal täglich Zähne putzen \n\u2022
+        Regelmässig Duschen (wenn möglich) \n\u2022
+        Kleidung (vor allem Unterwäsche) regelmässig wechseln \n\u2022
+        Nasse Schuhe mit Zeitung ausstopfen
+    </string>
+
+    <string name="Wasserhygiene">
+        \u2022 Mit Trinkwasser Zähne putzen \n\u2022
+        Bachwasser vor dem Konsum abkochen \n\u2022
+        Trinkwasser nur in sauberen Gefässen transportieren \n\u2022
+        Bachwasser möglichst nah an der Quelle fassen \n\u2022
+        Wenn möglich kein Schnee oder Schmelzwasser trinken
+    </string>
+
+    <string name="algHygiene">
+        Bei der Lagerhygiene geht es darum, im Lager die Chance Krank zu werden so tief wie möglich zu halten. Dies ist in einem Lager besonders wichtig, da sich Krankheiten meist sehr schnell und einfach verbreiten können.
+    </string>
+
+    <string name="Pfadigeschichte1">
+                Robert Stephenson Smyth Baden-Powell, der Gründer der Pfadfinderbewegung, wurde am 22.
+        Februar 1857 in London geboren. Er fiel durch die Aufnahmeprüfungen der Universität und
+        entschied sich Karriere im Militär zu machen. Er wurde in der Kolonie Indien stationiert wo er
+        auf Spione oder Scouts aufmerksam wurde und deren wichtige Funktion im Kampfgeschehen
+        erkannte. Später wurde er nach Sädafrika verlegt, wo er zum ersten Mal seine eigenen Scouts
+        ausbildete, aber immer noch im militärischen Umfeld. Als Baden-Powell, nun besser bekannt als
+        BiPi, eine Stadt aus der Belagerung befreien musste, setzte er seine Scouts erstmals im Gefecht
+        ein und er war erstaunt, wie gut sie ihre Aufgaben bewältigten.\n\t
+        Zurück in England beendete BiPi seine Militärische Karriere und sagte: ”Am Ende meiner
+        Karriere begann ich, die Kunst, junge Leute zu lehren, wie man Krieg macht, umzuwandeln in
+        die Kunst junge Leute zu lehren, in Frieden zu leben; Pfadi ist weit entfernt vom Krieg“\n\t
+        Im Jahre 1907 organisierte er das erste Pfadilager für Jungen auf der Insel Brownsea. Nach
+        dem riesigen Erfolg dieses Lagers schrieb er das Buch Pfadfinder. Das Buch war ein solcher Erfolg,
+        dass überall in England neue Pfadigruppen entstanden und 1909 auch Mädchenabteilungen
+        entstanden unter dem Namen Guides.
+    </string>
+
+    <string name="Pfadigeschichte2">
+        Im Jahre 1912 heiratete BiPi Olave Saint Clair Soames, welche als Chief Guide die Leitung
+        der Pfadfinderinnen übernahm. 1920 fand das erste Jamboreeii statt, es nahmen Jugendliche aus
+        34 Ländern teil. Später wurde BiPi zum World Chief ernannt. Die Pfadibewegung explodierte
+        und um 1993 gab es etwa 25 Millionen Pfadi in über 150 Ländern.
+    </string>
+
+    <string name="Kartenmassstab">
+        Der Kartenmassstab wir verwendet um Koordinaten aus der Karte zu lesen oder mithilfe von Koordinaten einen Punkt auf der Karte zu finden.\n\t
+        Der Kartenmassstab hat hierfür 4 Massstäbe, auf jeder Seite 2. Diese Masstäbe sind für die unterschiedlichen Massstäbe der Karten und z.B. bei einer 1:25\'000 Karte wird der Massstab verwendet unter dem 1:25\'000 steht. \n\t
+        Eine 1 auf dem Kartenmassstab steht immer für einen Kilometer in der realen Welt, somit können distanzen mit dem Kartenmasstab direkt aus der Karte gelesen werden.
+    </string>
+
     <string name="algKarten">
         Nebst vielen anderen Sachen ist die Schweiz für ihre guten Karten bekannt. Diese Karten haben ein eigenes Koordinatensystem, dieses richtet sich nach der Sternwarte Bern (2\'600\'000/1\'200\'000).\n\t
         Karten haben einen Massstab dieser ist das Verkleinerungsverhältniss von der Natur zur Karte bei 1:25\'000 ist ein Objekt auf der Karte 25\'000 mal kleiner als in der Natur. Ausserdem ist bei Karten Norden immer oben. \n\t
         Die Karten der Schweiz sind nach dem Massstab eingegliedert: \n \u2022
-        1:25'000: Braun, zum Wandern, OL, Spiele \n \u2022
-        1:50'000: Grün, zum Velofahren, Reisen, Planen \n \u2022
-        1:100'000: Rot, zum Velofahren, Autofahren \n \u2022
-        1:200'000: Orange, für Motorradfahrer, Autofahrer \n \u2022
-        1:300'000: Blau, für Motorradfahrer, Autofahrer, Bahnreisende \n \u2022
-        1:500'000: Rot, Eisenbahnnetz, Autobahnen, Autostrassen \n \u2022
+        1:25\'000: Braun, zum Wandern, OL, Spiele \n \u2022
+        1:50\'000: Grün, zum Velofahren, Reisen, Planen \n \u2022
+        1:100\'000: Rot, zum Velofahren, Autofahren \n \u2022
+        1:200\'000: Orange, für Motorradfahrer, Autofahrer \n \u2022
+        1:300\'000: Blau, für Motorradfahrer, Autofahrer, Bahnreisende \n \u2022
+        1:500\'000: Rot, Eisenbahnnetz, Autobahnen, Autostrassen \n \u2022
         1:1Million: Grün, Übersichtskarte der Schweiz und Nachbarländer
     </string>
 
@@ -312,5 +363,15 @@
         <b>Wo? </b>Ort des Unfalls \n
         <b>Wieviele? </b>Anzahl der Patienten, Art der Verletzungen \n
         <b>Weiteres? </b>Weitere wichtige Informationen
+    </string>
+
+    <string name="algSignaturen">
+        Signaturen sind Symbole auf der Karte die Objekte in der Echten Welt darstellen. So stellt ein Kreis mit einem Punkt in der mitte zum Beispiel ein Kirche dar. \n
+        Signaturen sind in 4 Farben unterteilt: \n\u2022
+        <b>Schwarz: </b>Menschenerbautes (Häuser, Strassen), Fels \n\u2022
+        <b>Grün: </b>Natur (Wald, Rasenflächen) \n\u2022
+        <b>Rot: </b>Öffentliche Verkehrsmittel, Grenzen \n\u2022
+        <b>Blau: </b>Gewässer \n
+        Hier sind die Signaturen der 1:25\'000-Karten dargestellt da diese für die Pfadi am relevantesten sind.
     </string>
 </resources>

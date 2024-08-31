@@ -3,6 +3,8 @@ package com.example.pfaditechnik;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
@@ -16,6 +18,9 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnHomeReg;
     private RelativeLayout relRegister;
+    private RelativeLayout relKoordinaten;
+    private RelativeLayout relSignaturen;
+    private Button btnKarte;
     private Button btnHamburger;
     private Button btnHomeIcon;
     @Override
@@ -24,11 +29,36 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_karte);
 
+
+        WebView webPunktgg = findViewById(R.id.webPunktgg);
+        String pointGG = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/6iBE6whhse8?si=Y2Ugb-GFuYAp0Xhg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webPunktgg.loadData(pointGG, "text/html", "utf-8");
+        webPunktgg.getSettings().setJavaScriptEnabled(true);
+        webPunktgg.setWebChromeClient(new WebChromeClient());
+
+        WebView webKoordinatengg = findViewById(R.id.webKoordinatengg);
+        String koordinatenGG = "";
+        webKoordinatengg.getSettings().setJavaScriptEnabled(true);
+        webKoordinatengg.setWebChromeClient(new WebChromeClient());
+        //TODO: String von Youtube Video einfügen
+
+
         btnHomeReg = findViewById(R.id.btnHomeReg);
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
+        btnKarte = findViewById(R.id.btnKarte);
+        btnKarte.setOnClickListener(this);
+
         relRegister = findViewById(R.id.relRegister);
+        relKoordinaten = findViewById(R.id.relKoordinaten);
+        relSignaturen = findViewById(R.id.relSignaturen);
+
+        Button btnSignaturen = findViewById(R.id.btnSignaturen);
+        btnSignaturen.setOnClickListener(this);
+
+        Button btnKoordinaten = findViewById(R.id.btnKoordinaten);
+        btnKoordinaten.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -97,6 +127,13 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
         } else if (v.getId() == R.id.btnHomeIcon) {
             Intent intentHome = new Intent(Karte.this, MainActivity.class);
             startActivity(intentHome);
+        } else if (v.getId() == R.id.btnKarte) {
+            relKoordinaten.setVisibility(View.GONE);
+            relSignaturen.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnKoordinaten) {
+            relKoordinaten.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnSignaturen) {
+            relSignaturen.setVisibility(View.VISIBLE);
         }
     }
 }

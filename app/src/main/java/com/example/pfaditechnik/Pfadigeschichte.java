@@ -16,6 +16,8 @@ public class Pfadigeschichte extends AppCompatActivity implements View.OnClickLi
 
     private Button btnHomeReg;
     private RelativeLayout relRegister;
+    private Button btnPfadigeschichte;
+    private RelativeLayout relPfadigeschichte;
     private Button btnHamburger;
     private Button btnHomeIcon;
 
@@ -55,6 +57,10 @@ public class Pfadigeschichte extends AppCompatActivity implements View.OnClickLi
         } else if (v.getId() == R.id.btnHomeIcon) {
             Intent intentHome = new Intent(Pfadigeschichte.this, MainActivity.class);
             startActivity(intentHome);
+        } else if (v.getId() == R.id.btnPfadiGeschichte) {
+            relPfadigeschichte.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnTxtGeschichte) {
+            relPfadigeschichte.setVisibility(View.VISIBLE);
         }
     }
 
@@ -68,7 +74,14 @@ public class Pfadigeschichte extends AppCompatActivity implements View.OnClickLi
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
+        btnPfadigeschichte = findViewById(R.id.btnPfadiGeschichte);
+        btnPfadigeschichte.setOnClickListener(this);
+
         relRegister = findViewById(R.id.relRegister);
+        relPfadigeschichte = findViewById(R.id.relPfadigeschichte);
+
+        Button btnTxtGeschichte = findViewById(R.id.btnTxtGeschichte);
+        btnTxtGeschichte.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);

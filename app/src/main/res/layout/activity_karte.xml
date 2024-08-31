@@ -45,7 +45,7 @@
         android:layout_height="match_parent"
         android:id="@+id/relKoordinaten"
         android:background="@color/lightgreen"
-        android:visibility="visible">
+        android:visibility="gone">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -57,7 +57,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                tools:ignore="WebViewLayout">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -79,11 +80,947 @@
                     android:textSize="15dp"
                     android:text="@string/algKarten"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kartenmassstab"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kartenmassstab"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Kartenmassstab"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Koordinaten eines Punktes bestimmen"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Hier geht es darum die Koordinaten eines Punktes in der echten Welt mit einem Kartenmassstab und einer Karte zu bestimmen"
+                    android:layout_marginTop="10dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webPunktgg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punkt finden mit Kooridnaten"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Hier geht es darum, dass man die Koordinaten für einen Punkt auf der Karte hat und nun mithilfe eines Kartenmassstabes und einer Karte diesen Punkt finden muss"
+                    android:layout_marginTop="10dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webKoordinatengg"/>
+
                 <!--TODO: Einführung was ein Kartenmassstab ist-->
 
             </LinearLayout>
         </ScrollView>
-    </RelativeLayout>
+    </RelativeLayout> <!-- Koordinaten -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relSignaturen"
+        android:background="@color/lightgreen"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signaturen"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/algSignaturen"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Strassen, Wege"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/autobahn"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Autobahn"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/strasse"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Strasse"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/naturstrasse"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Naturstrasse"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/weg"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Weg"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wanderweg"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Wanderweg"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bahnhof"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bahnhof"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/gleis"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bahnlinie"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Bauten"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/haus"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Haus, Gebäude"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/abgelegener_gasthof"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Abgelegener Gasthof"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/kirche"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kirche"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/aussichtsturm"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Aussichtsturm"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/grosse_antenne"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Antenne"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/mauer_ruine"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mauer, Ruine"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lawinenverbauungen"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Lawinenverbauungen"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sportplatz"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sportplatz"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/schiessstand"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Schissstand"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hochspannungsleitung"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hochspannungsleitung"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/staudamm"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Staudamm"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/spital"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Spital"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Areale"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/flughafen"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Flughafen"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/camping"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Campingplatz"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/friedhof"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Friedhof"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/solarkraftwerk"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Solarkraftwerk"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Gewässer"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/fluss__bach"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bach, Fluss"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/see"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="See"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sumpf"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sumpf"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Bodenbedeckung"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/h_henknoten"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Höhenknoten"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/b_schung"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Böschung, Steinböschung"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:src="@drawable/fels__ger_ll"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fels, Geröll"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:src="@drawable/gletscher"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Gletscher"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wald"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Wald"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/offenerwald"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Wald offen"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/markanterbaum"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Einzelbaum"
+                            android:textSize="15dp"
+                            android:padding="8dp"
+                            android:gravity="center"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout> <!-- Signaturen -->
+
+
 
     <Button
         android:layout_width="wrap_content"
