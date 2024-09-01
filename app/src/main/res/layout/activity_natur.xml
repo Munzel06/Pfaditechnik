@@ -88,6 +88,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Igel"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Maulwurf"
@@ -98,6 +105,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/maulwurf"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Maulwurf"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -112,6 +126,14 @@
                     android:layout_height="200dp"
                     android:src="@drawable/spitzmaus"
                     android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Spitzmaus"
+                    android:layout_marginTop="5dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -123,6 +145,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/fledermaus"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Fledermaus"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -139,6 +168,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Feldhase"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Eichhörnchen"
@@ -149,6 +185,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/eichhoernchen"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Eichhörnchen"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -165,9 +208,16 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Feldmaus"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gämse"
+                    android:text="Gemse"
                     android:textSize="20dp"
                     android:layout_marginTop="5dp"/>
 
@@ -175,6 +225,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/gams"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Gemse"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -191,6 +248,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Steinbock"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Reh"
@@ -201,6 +265,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/reh"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Reh"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -217,6 +288,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Rothirsch"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Fuchs"
@@ -227,6 +305,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/fuchs"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Fuchs"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -243,6 +328,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Dachs"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Steinmarder"
@@ -253,6 +345,13 @@
                     android:layout_width="300dp"
                     android:layout_height="250dp"
                     android:src="@drawable/steinmarder"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Steinmarder"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -277,6 +376,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Ente"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kuckuck"
@@ -287,6 +393,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/kuckuck"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Kuckuck"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -303,6 +416,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Grünspecht"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Grünfink"
@@ -316,29 +436,10 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bachstelze"
-                    android:textSize="20dp"
-                    android:layout_marginTop="5dp"/>
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/bachstelze"
-                    android:layout_marginTop="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Waldkauz"
-                    android:textSize="20dp"
-                    android:layout_marginTop="5dp"/>
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/waldkauz"
+                    android:textSize="15dp"
+                    android:text="@string/Grünfink"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -355,6 +456,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Uhu"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rotmilan"
@@ -365,6 +473,13 @@
                     android:layout_width="300dp"
                     android:layout_height="300dp"
                     android:src="@drawable/rotmilan"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Rotmilan"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -381,16 +496,10 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Habicht"
-                    android:textSize="20dp"
-                    android:layout_marginTop="5dp"/>
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/habicht"
+                    android:textSize="15dp"
+                    android:text="@string/Mäusebussard"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -404,6 +513,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/turmfalke"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Turmfalke"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -428,6 +544,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Ringelnatter"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kreuzotter (giftig)"
@@ -438,6 +561,13 @@
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:src="@drawable/kreuzotter"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Kreuzotter"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
@@ -462,6 +592,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Feuersalamander"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Erdkröte"
@@ -475,6 +612,13 @@
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Erdkröte"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Grasfrosch"
@@ -485,6 +629,13 @@
                     android:layout_width="300dp"
                     android:layout_height="230dp"
                     android:src="@drawable/grasfrosch"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/Grasfrosch"
                     android:layout_marginTop="5dp"/>
 
             </LinearLayout>

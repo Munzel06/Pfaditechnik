@@ -1,6 +1,114 @@
 <resources>
     <string name="app_name">Pfadi Technik</string>
 
+    <string name="Grasfrosch">
+        Stumpfe Schnauze. Nur an den Hinterbeinen Schwimmhäute. Die Oberseite ist braun mit dunklen Flecken mit einem grossen dunklen Schläfenfleck.
+    </string>
+
+    <string name="Erdkröte">
+        Der Körper ist braun oder grau. Nur zur Laichenzeit im Wasser zu finden, sonst in Gärten, Feldern und Wäldern. Tagsüber in Erdhöhlen nachts aktiv.
+    </string>
+
+    <string name="Feuersalamander">
+        Runder Schwanz. Keine Schwimmhäute zwischen den Zehen. glänzend schwarz, mit gelben Flecken oder Streifen.
+    </string>
+
+    <string name="Kreuzotter">
+        Schwarze Zickzackzeichnung auf rotbraunem Grund, kantiger Kopf und flache Schnauzenspitze. Vorwiegend in feuchten Wiesen, Waldrändern und Kahlschlägen. Bis 80 cm lang.
+    </string>
+
+    <string name="Ringelnatter">
+        Häufig in der Nähe von Wasser. Färbung grau, mit zwei leuchtendgelben, halbmondförmigen Fleken hinter dem Kopf. Kann schwimmen. Lebt von Fräschen und Fischen. Bis 1.5m lang.
+    </string>
+
+    <string name="Turmfalke">
+        Rotbraune Flügeloberseite, Weisser Körper und Flügelunterseite, Männchen: Grauer Kopf, Weibchen: Rotbrauner Kopf. Lebt in Waldränder, in Hochspannungsleiungen oder in Gebäuden. Frisst Mäuse und Singvägel.
+    </string>
+
+    <string name="Mäusebussard">
+        Dunkelbraun bis fast Weisses Gefieder, abgerundeter Schwanz. Lebt auf Wiesen und Äckern mit angrenzendem Wald. Frisst überwiegend kleine Säugetiere.
+    </string>
+
+    <string name="Rotmilan">
+        Brauner Körper, Flügel schwarz und weiss, gegabelter Schwanz. Lebt im Sommer in Mitteleuropa und im Winter in Südwesteuropa. Frisst kleine Säugetiere, wirbellose Tiere, Amphibien, kleine Vögel und Aas.
+    </string>
+
+    <string name="Uhu">
+        Hell bis Dunkelbraune Federn, orange Augen, Federohren. Lebt in vorallem im Mittelgebirge und den Alpen. Frisst kleine bis mittelgrosse Säugetiere und Vögel.
+    </string>
+
+    <string name="Grünfink">
+        Gelbe Federn, beim Schwanz grau-schwarz. Lebt in kleinen Dörfern und in Städten. Frisst Schoten, Kapseln und Früchte.
+    </string>
+
+    <string name="Grünspecht">
+        Oberseite Grün, unterseite hell- bis graugrün gefärbt, Kopf ist teilweise Rot. Wohnt an den Waldrändern und Parks mit Bäumen. Frisst Ameisen mit seiner 10 cm langen Zunge.
+    </string>
+
+    <string name="Kuckuck">
+        Graue Federn. Bekannt für den Kuckucksruf. Legt seine Eier in fremde Nester. Wohnt überwiegend im Wald und in Kulturlandschaften. Frisst Insekten.
+    </string>
+
+    <string name="Ente">
+        Männchen: Grüner Kopf, graubraune Federn, weisser Halsring und gelber Schnabel. Weibchen: Graubrauner Körper, Orangener Schnabel. Lebt fast überall wo es Gewässer hat. Frisst überwiegend pflanzliche Stoffe.
+    </string>
+
+    <string name="Steinmarder">
+        Braunes Fell. am Hals weiss. Dämmerungs- und nachtaktiv. Klettert und springt sehr gut. Frisst Vögel, Mäuse, Insekten, Beeren. Lebt in Wäldern, Siedlungs- und Feldgebieten.
+    </string>
+
+    <string name="Dachs">
+        Bräunlichgraues Fell, Kopf schwarzweiss längsgestreift. Er gräbt sich eine Höhle mit weitläufigen, komplizierten Gängen. Dämmerungs- und nachtaktiv. Lebt paarweise. Im Winter ist seine Tätigkeit ziemlich verlangsamt, er macht aber keinen eigentlichen Winterschlaf. Allesfresser. Lebensraum: Wälder und Gebüsch.
+    </string>
+
+    <string name="Fuchs">
+        Rotbraunes Fell. Kopf- und Brustunterseite und Schwanzspitze sind weiss. Dämmerungs- und nachtaktiv. Lebt einzeln oder familienweise in selbstgebauten Höhlen (Fuchsbau). Frisst Mäuse, Beeren, Insekten, Geflügel. Lebt in Wald, Feld und Gebüsch.
+    </string>
+
+    <string name="Rothirsch">
+        Rotbraunes Sommerkleid, braungraues Winterkleid. Er hat einen kleinen Schwanz, den er auf der Flucht hoch hält, wobei das weisse Hinterteil sichtbar wird. Das kräftige Stangengeweih wird jedes jahr abgeworfen. Lautes Rähren als Brunftschrei. Dämmerungs- und Nachtaktiv. Pflanzenfresser. Lebt in grösseren Wäldern und im Gebirge bis über die Waldgrenze.
+    </string>
+
+    <string name="Reh">
+        Rötlichbraunes Sommerkleid, graubraunes Winterkleid. Im Sommer lebt das Reh allein oder in kleinen Gruppen, im Winter dagegen in Rudeln von 10-20 Tieren. Der Rehbock trägt ein kleines Geweih, das er im Winter abwirft. Das Reh hat im Gegensatz zum Hirsch keinen Schwanz. Frisst frische Blätter, Gras und Eicheln. Lebt in Wäldern, auf Feldern mit viel Gebüsch und auf Wiesen.
+    </string>
+
+    <string name="Steinbock">
+        Graubraunes Fell. Mächtiges schön geschwungenes Gehörn, mit dicken Querwülsten auf der Vorderseite beim Männchen. Die Geiss hat kürzere Hörner. Tagesaktiv in kleinen Rudeln. Klettert und springt sehr gut. Pfeifender Warnruf. Frisst Pflanzen. Lebt in den Alpen oberhalb der Baumgrenze.
+    </string>
+
+    <string name="Gemse">
+        Hörner am Ende Hackig gebogen. Dunkelbraunes Fell, Kopf und Hintern weiss. Klettert und springt sehr gut. Ihre Sprünge erreichen oft 7 bis 9 m Länge. Tagtier. Nahrung: Gras, Blätter, junge Triebe an Ästen. Lebensraum: Hochgebirge bis 3000 m Höhe, steile Weisen und felsige Gebiete.
+    </string>
+
+    <string name="Feldmaus">
+        Bräunliches Fell, glatter Schwanz, kleine Ohren, stumpfe Schnauze. Als Wühlmaus gräbt sie unterirdische Gänge und Höhlen. Grösse: 9-12 cm. Vorwiegend Pflanzenfresser. Lebt in Feldern, Gärten, Wiesen.
+    </string>
+
+    <string name="Eichhörnchen">
+        Langer, buschiger Schwanz und vor allem im Winter Haarbüschelchen an den Ohren. Zehen mit langen gebogenen Krallen (gewandter Kletterer und Springer). Rotbraunes oder schwarzes Fell. Tagtier. Hält keinen Winterschlaf. Frisst Nüsse, Zapfen, Knospen, und auch Vogeleier. Labt in Wäldern, Parkanlagen und Gärten.
+    </string>
+
+    <string name="Feldhase">
+        Gelbbraunes Fell. Ohrenspitzen und Schwanzoberseite sind schwarz. Er legt in Bodenvertiefungen Lager an. Ohren mindestens so lang wie Kopf und lange kräftige Beine, er macht oft Männchen zur Fluchtsicherung. Grösse: 48-68 cm. Frisst Pflanzen. Lebt in Feldern, Wiesen, an Waldrändern.
+    </string>
+
+    <string name="Fledermaus">
+        Mit grosser, dünner Flughaut, die zwischen je 4 verlängerten Fingern, Armen, Beinen und Schwanz ausgespannt ist. Daumen kurz, mit Kralle. Fell dunkelbraun bis grau. Grösse: 3-8 cm. In der Dämmerung und Nacht aktiv. Ruht am Tag aufgehängt an den Hinterbeinen auf Dachböden, in hohlen Bäumen und Höhlen. Winterschläfer.
+    </string>
+
+    <string name="Spitzmaus">
+        Schnauze lang und spitz wie ein Rüssel. Samtiges, braunes bis graues Fell. Grösse: 5-10 cm. Frisst Würmer, Kerbtiere. Lebt fast überall, in Häusern, Feld und Wasser.
+    </string>
+
+    <string name="Maulwurf">
+        Schwarzes, samtiges Fell. Walzenförmiger Körper. Sehr kleine, mit Fell versteckte Augen. Vorderfüsse wie Grabschaufeln. Grösse: 11-15 cm. Lebt unterirdisch. Wirft lose Erde zu Haufen auf. Frisst Würmer, Insekten, kleine Wirbeltiere. Lebt in Gärten, Feldern und Wäldern.
+    </string>
+    
+    <string name="Igel">
+        Rücken mit vielen Stacheln. Körper eher Plump. Grösse: 22-28. In der Dämmerung und Nachts aktiv. Frisst Würmer, Insekten, Schnecken, Obst. Echter Winterschläfer. Lebt in Gebüschen, an Waldrändern, in Gärten.
+    </string>
+
     <string name="Körperhygiene">
         \u2022 Täglich vor dem Essen, vor der Küchenarbeit und nach der Toilette Hände waschen \n\u2022
         Mindestens einmal täglich Zähne putzen \n\u2022
