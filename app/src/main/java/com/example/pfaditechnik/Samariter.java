@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -45,6 +47,18 @@ public class Samariter extends AppCompatActivity implements View.OnClickListener
         relVerbände = findViewById(R.id.relVerbände);
         relNotrufnummern = findViewById(R.id.relNotrufNummern);
         relHygiene = findViewById(R.id.relHygiene);
+
+        WebView webDruckverband = findViewById(R.id.webDruckverband);
+        String druckverband = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/7yTKsBfchJQ?si=WmXLbSirpSKO4DuC\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webDruckverband.loadData(druckverband, "text/html", "utf-8");
+        webDruckverband.getSettings().setJavaScriptEnabled(true);
+        webDruckverband.setWebChromeClient(new WebChromeClient());
+
+        WebView webAhrenverband = findViewById(R.id.webAhrenverband);
+        String ahrenverband = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/s55YpzCwq4A?si=SCgwLbleRDYC6TYb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webAhrenverband.loadData(ahrenverband, "text/html", "utf-8");
+        webAhrenverband.getSettings().setJavaScriptEnabled(true);
+        webAhrenverband.setWebChromeClient(new WebChromeClient());
 
         Button btnHygiene = findViewById(R.id.btnHygiene);
         btnHygiene.setOnClickListener(this);

@@ -3,6 +3,8 @@ package com.example.pfaditechnik;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
@@ -40,6 +42,84 @@ public class Pionier extends AppCompatActivity implements View.OnClickListener {
         relSeilkunde = findViewById(R.id.relSeilkunde);
         relKnoten = findViewById(R.id.relKnoten);
         relKrawattenKnopf = findViewById(R.id.relKrawattenKnopf);
+
+        WebView webKrawatte = findViewById(R.id.webKrawatte);
+        String krawatte = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/_Hexs-FzCkA?si=LYRpVjB0pQbcWYcU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webKrawatte.loadData(krawatte, "text/html", "utf-8");
+        webKrawatte.getSettings().setJavaScriptEnabled(true);
+        webKrawatte.setWebChromeClient(new WebChromeClient());
+
+        WebView webSamariter = findViewById(R.id.webSamariter);
+        String samariter = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/2VpkdjliU4I?si=YDmFVeCfFWZwYm8c\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webSamariter.loadData(samariter, "text/html", "utf-8");
+        webSamariter.getSettings().setJavaScriptEnabled(true);
+        webSamariter.setWebChromeClient(new WebChromeClient());
+
+        WebView webWeber = findViewById(R.id.webWeber);
+        String weber = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/iCAZ4N-arEg?si=SJRuIsp4DQS9rrVY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webWeber.loadData(weber, "text/html", "utf-8");
+        webWeber.getSettings().setJavaScriptEnabled(true);
+        webWeber.setWebChromeClient(new WebChromeClient());
+
+        WebView webFischer = findViewById(R.id.webFischer);
+        String fischer = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/hHzv_2_LBN8?si=udClPD1i61gyr94a\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webFischer.loadData(fischer, "text/html", "utf-8");
+        webFischer.getSettings().setJavaScriptEnabled(true);
+        webFischer.setWebChromeClient(new WebChromeClient());
+
+        WebView webAchter = findViewById(R.id.webAchter);
+        String achter = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/X5O0tvPwgSw?si=DounyIOa4AJxmGLI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webAchter.loadData(achter, "text/html", "utf-8");
+        webAchter.getSettings().setJavaScriptEnabled(true);
+        webAchter.setWebChromeClient(new WebChromeClient());
+
+        WebView webBretzeli = findViewById(R.id.webBretzeli);
+        String bretzeli = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/2wTmtgPl1CI?si=j4nvNIuw5F7AjUpY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webBretzeli.loadData(bretzeli, "text/html", "utf-8");
+        webBretzeli.getSettings().setJavaScriptEnabled(true);
+        webBretzeli.setWebChromeClient(new WebChromeClient());
+
+        WebView webMaurer = findViewById(R.id.webMaurer);
+        String maurer = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/4dt-wOv8kAY?si=t6LZ-L1EpiOXOuqC\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webMaurer.loadData(maurer, "text/html", "utf-8");
+        webMaurer.getSettings().setJavaScriptEnabled(true);
+        webMaurer.setWebChromeClient(new WebChromeClient());
+
+        WebView webFlaschli = findViewById(R.id.webFläschli);
+        String flaschli = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/3kJSCPdWMkg?si=LBY6onm95LzbE_46\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webFlaschli.loadData(flaschli, "text/html", "utf-8");
+        webFlaschli.getSettings().setJavaScriptEnabled(true);
+        webFlaschli.setWebChromeClient(new WebChromeClient());
+
+        WebView webFuhrmann = findViewById(R.id.webFuhrmann);
+        String fuhrmann = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/R3R2MCH_vtI?si=h6zPbrQEoDhgHpVU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webFuhrmann.loadData(fuhrmann, "text/html", "utf-8");
+        webFuhrmann.getSettings().setJavaScriptEnabled(true);
+        webFuhrmann.setWebChromeClient(new WebChromeClient());
+
+        WebView webAnker = findViewById(R.id.webAnker);
+        String anker = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/F61qe5uIdR4?si=xJA5HVEn_umcy3gP\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webAnker.loadData(anker, "text/html", "utf-8");
+        webAnker.getSettings().setJavaScriptEnabled(true);
+        webAnker.setWebChromeClient(new WebChromeClient());
+
+        WebView webHalbmastwurf = findViewById(R.id.webHalbmastwurf);
+        String halbmastwurf = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/gWCZxmfWo9A?si=iWDSp3pl-0e8q09a\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webHalbmastwurf.loadData(halbmastwurf, "text/html", "utf-8");
+        webHalbmastwurf.getSettings().setJavaScriptEnabled(true);
+        webHalbmastwurf.setWebChromeClient(new WebChromeClient());
+
+        WebView webMastwurf = findViewById(R.id.webMastwurf);
+        String mastwurf = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/4PSEvp_lnYo?si=hOL9IAIEegtJbB09\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webMastwurf.loadData(mastwurf, "text/html", "utf-8");
+        webMastwurf.getSettings().setJavaScriptEnabled(true);
+        webMastwurf.setWebChromeClient(new WebChromeClient());
+
+        WebView webGeschtekterMastwurf = findViewById(R.id.webGeschtekterMastwurf);
+        String geschtekterMastwurf = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/SNX_-aYCsns?si=AVgPkxCfLaGNvmHf\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webGeschtekterMastwurf.loadData(geschtekterMastwurf, "text/html", "utf-8");
+        webGeschtekterMastwurf.getSettings().setJavaScriptEnabled(true);
+        webGeschtekterMastwurf.setWebChromeClient(new WebChromeClient());
 
         Button btnKrawattenKnopf = findViewById(R.id.btnKrawattenKnopf);
         btnKrawattenKnopf.setOnClickListener(this);

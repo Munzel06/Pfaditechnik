@@ -155,7 +155,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                tools:ignore="WebViewLayout">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -182,6 +183,11 @@
                     android:text="@string/Samariterknoten"
                     android:textSize="15dp"/>
 
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webSamariter"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -199,6 +205,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Weber"
                     android:textSize="15dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webWeber"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -218,6 +229,11 @@
                     android:text="@string/Fischer"
                     android:textSize="15dp"/>
 
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webFischer"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -235,6 +251,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Achter"
                     android:textSize="15dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webAchter"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -254,6 +275,11 @@
                     android:text="@string/Bretzeli"
                     android:textSize="15dp"/>
 
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webBretzeli"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -271,6 +297,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Maurer"
                     android:textSize="15dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webMaurer"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -290,6 +321,11 @@
                     android:text="@string/Fläschli"
                     android:textSize="15dp"/>
 
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webFläschli"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -307,6 +343,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Fuhrmann"
                     android:textSize="15dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webFuhrmann"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -326,6 +367,11 @@
                     android:text="@string/Anker"
                     android:textSize="15dp"/>
 
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webAnker"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -344,6 +390,11 @@
                     android:text="@string/Halbmastwurf"
                     android:textSize="15dp"/>
 
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webHalbmastwurf"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -361,6 +412,30 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Achterschlinge"
                     android:textSize="15dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webMastwurf"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Geschteckter Mastwurf"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wird gemacht wenn man einen Mastwurf zum Beispiel an einem Baum macht wo man den Knopf nicht von oben an die Richitge stelle legen kann."
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webGeschtekterMastwurf"/>
 
             </LinearLayout>
         </ScrollView>
@@ -383,7 +458,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                tools:ignore="WebViewLayout">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -405,9 +481,14 @@
                     android:text="@string/Krawattenknopf"
                     android:layout_marginTop="5dp"/>
 
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/webKrawatte"/>
+
             </LinearLayout>
         </ScrollView>
-    </RelativeLayout>
+    </RelativeLayout> <!-- Krawattenknopf -->
 
     <Button
         android:layout_width="wrap_content"

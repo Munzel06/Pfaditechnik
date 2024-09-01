@@ -37,10 +37,10 @@ public class Karte extends AppCompatActivity implements View.OnClickListener {
         webPunktgg.setWebChromeClient(new WebChromeClient());
 
         WebView webKoordinatengg = findViewById(R.id.webKoordinatengg);
-        String koordinatenGG = "";
+        String koordinatenGG = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/bZQlHGNno94?si=DvO3HBKC6telWNLk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+        webKoordinatengg.loadData(koordinatenGG, "text/html", "utf-8");
         webKoordinatengg.getSettings().setJavaScriptEnabled(true);
         webKoordinatengg.setWebChromeClient(new WebChromeClient());
-        //TODO: String von Youtube Video einfügen
 
 
         btnHomeReg = findViewById(R.id.btnHomeReg);

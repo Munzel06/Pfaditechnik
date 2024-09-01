@@ -140,8 +140,6 @@
                     android:layout_height="200dp"
                     android:id="@+id/webKoordinatengg"/>
 
-                <!--TODO: Einführung was ein Kartenmassstab ist-->
-
             </LinearLayout>
         </ScrollView>
     </RelativeLayout> <!-- Koordinaten -->
