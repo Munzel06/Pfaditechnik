@@ -122,7 +122,7 @@
     <RelativeLayout
         android:id="@+id/relRegister"
         android:layout_width="150dp"
-        android:layout_height="732dp"
+        android:layout_height="match_parent"
         android:layout_marginStart="0dp"
         android:background="@color/darkgreen"
         android:visibility="gone"
