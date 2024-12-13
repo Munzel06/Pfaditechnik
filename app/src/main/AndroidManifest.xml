@@ -14,34 +14,34 @@
         android:theme="@style/Theme.PfadiTechnik"
         tools:targetApi="31">
         <activity
-            android:name=".Sonstiges"
+            android:name="com.pfadi.pfaditechnik.Sonstiges"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Karte"
+            android:name="com.pfadi.pfaditechnik.Karte"
             android:screenOrientation="portrait"
             android:exported="false"/>
         <activity
-            android:name=".Natur"
+            android:name="com.pfadi.pfaditechnik.Natur"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Ubermittlung"
+            android:name="com.pfadi.pfaditechnik.Ubermittlung"
             android:exported="false" />
         <activity
-            android:name=".Pionier"
+            android:name="com.pfadi.pfaditechnik.Pionier"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Samariter"
+            android:name="com.pfadi.pfaditechnik.Samariter"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Pfadigeschichte"
+            android:name="com.pfadi.pfaditechnik.Pfadigeschichte"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.pfadi.pfaditechnik.MainActivity"
             android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>

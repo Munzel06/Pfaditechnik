@@ -1,4 +1,4 @@
-package com.example.pfaditechnik;
+package com.pfadi.pfaditechnik;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.pfadi.pfaditechnik.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

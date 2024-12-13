@@ -1,4 +1,4 @@
-package com.example.pfaditechnik;
+package com.pfadi.pfaditechnik;
 
 import org.junit.Test;
 

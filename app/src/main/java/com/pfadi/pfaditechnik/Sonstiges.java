@@ -1,4 +1,4 @@
-package com.example.pfaditechnik;
+package com.pfadi.pfaditechnik;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,39 +12,35 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Ubermittlung extends AppCompatActivity implements View.OnClickListener {
+import com.pfadi.pfaditechnik.R;
+
+public class Sonstiges extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnHomeReg;
     private RelativeLayout relRegister;
-    private RelativeLayout relGeheimschriften;
-    private Button btnUbermittlung;
-
+    private RelativeLayout relPacken;
     private Button btnHamburger;
     private Button btnHomeIcon;
-    private RelativeLayout relMorsen;
+    private Button btnSonstiges;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_ubermittlung);
+        setContentView(R.layout.activity_sonstiges);
 
         btnHomeReg = findViewById(R.id.btnHomeReg);
         btnHomeReg.setOnClickListener(this);
         btnHamburger = findViewById(R.id.btnHamburger);
         btnHamburger.setOnClickListener(this);
-        btnUbermittlung = findViewById(R.id.btnUbermittlung);
-        btnUbermittlung.setOnClickListener(this);
+        btnSonstiges = findViewById(R.id.btnSonstiges);
+        btnSonstiges.setOnClickListener(this);
 
         relRegister = findViewById(R.id.relRegister);
-        relGeheimschriften = findViewById(R.id.relGeheimschriften);
-        relMorsen = findViewById(R.id.relMorsen);
+        relPacken = findViewById(R.id.relPacken);
 
-        Button btnMorsen = findViewById(R.id.btnMorsen);
-        btnMorsen.setOnClickListener(this);
-
-        Button btnGeheimschriften = findViewById(R.id.btnGeheimschriften);
-        btnGeheimschriften.setOnClickListener(this);
+        Button btnPacken = findViewById(R.id.btnPacken);
+        btnPacken.setOnClickListener(this);
 
         Button btnPionierReg = findViewById(R.id.btnPionierReg);
         btnPionierReg.setOnClickListener(this);
@@ -90,36 +86,33 @@ public class Ubermittlung extends AppCompatActivity implements View.OnClickListe
             btnHomeReg.setVisibility(View.GONE);
             btnHomeIcon.setVisibility(View.VISIBLE);
         } else if (v.getId() == R.id.btnPionierReg){
-            Intent intentPionier = new Intent(Ubermittlung.this, Pionier.class);
+            Intent intentPionier = new Intent(Sonstiges.this, Pionier.class);
             startActivity(intentPionier);
         } else if (v.getId() == R.id.btnSamariterReg) {
-            Intent intentSamariter = new Intent(Ubermittlung.this, Samariter.class);
+            Intent intentSamariter = new Intent(Sonstiges.this, Samariter.class);
             startActivity(intentSamariter);
         } else if (v.getId() == R.id.btnUbermittlungReg) {
-            Intent intentUbermittlung = new Intent(Ubermittlung.this, Ubermittlung.class);
+            Intent intentUbermittlung = new Intent(Sonstiges.this, Ubermittlung.class);
             startActivity(intentUbermittlung);
         } else if (v.getId() == R.id.btnNaturReg) {
-            Intent intentNatur = new Intent(Ubermittlung.this, Natur.class);
+            Intent intentNatur = new Intent(Sonstiges.this, Natur.class);
             startActivity(intentNatur);
         } else if (v.getId() == R.id.btnKarteReg) {
-            Intent intentKarte = new Intent(Ubermittlung.this, Karte.class);
+            Intent intentKarte = new Intent(Sonstiges.this, Karte.class);
             startActivity(intentKarte);
         } else if (v.getId() == R.id.btnGeschichteReg) {
-            Intent intentGeschichte = new Intent(Ubermittlung.this, Pfadigeschichte.class);
+            Intent intentGeschichte = new Intent(Sonstiges.this, Pfadigeschichte.class);
             startActivity(intentGeschichte);
         } else if (v.getId() == R.id.btnSonstigesReg) {
-            Intent intentSonstiges = new Intent(Ubermittlung.this, Sonstiges.class);
+            Intent intentSonstiges = new Intent(Sonstiges.this, Sonstiges.class);
             startActivity(intentSonstiges);
         } else if (v.getId() == R.id.btnHomeIcon) {
-            Intent intentHome = new Intent(Ubermittlung.this, MainActivity.class);
+            Intent intentHome = new Intent(Sonstiges.this, MainActivity.class);
             startActivity(intentHome);
-        } else if (v.getId() == R.id.btnUbermittlung) {
-            relGeheimschriften.setVisibility(View.GONE);
-            relMorsen.setVisibility(View.GONE);
-        } else if (v.getId() == R.id.btnGeheimschriften) {
-            relGeheimschriften.setVisibility(View.VISIBLE);
-        } else if (v.getId() == R.id.btnMorsen) {
-            relMorsen.setVisibility(View.VISIBLE);
+        } else if (v.getId() == R.id.btnSonstiges) {
+            relPacken.setVisibility(View.GONE);
+        } else if (v.getId() == R.id.btnPacken) {
+            relPacken.setVisibility(View.VISIBLE);
         }
     }
 }
